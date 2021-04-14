@@ -1,0 +1,157 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" contein="text/css" />
+    <title>C++講習会　配列</title>
+    <link href="./../css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="kosyukai_icon.ico">
+    <script src="../lib/jquery-3.1.1.min.js"></script>
+    <script src="../lib/navigate_menu.js"></script>
+    <script src="index.js"></script>
+
+</head>
+<body>
+
+    <div id="contener">
+
+        <h1>C++講習会2020</h1>
+        <h2>配列</h2>
+
+        <nav class="navigation">
+
+            <h3>講習一覧</h3>
+            <ol>
+                <li><a href="index.html"> TOP</a></li>
+                <li><a href="setup2020.html">プロジェクト作成</a></li>
+                <li><a href="zero.html">コンパイル</a></li>
+                <li><a href="one.html">出力</a></li>
+                <li><a href="two.html">表示</a></li>
+                <li><a href="three.html">算術演算子</a></li>
+                <li><a href="four.html">入力</a></li>
+                <li><a href="five.html">分岐</a></li>
+                <li><a href="six.html">繰り返し</a></li>
+                <li><a href="seven.html">配列</a></li>
+                <li><a href="eight.html">関数</a></li>
+                <li><a href="nine.html">クラス</a></li>
+                <li><a href="ten.html">最終試験</a></li>
+                <li><a href="MultiDimarray.html">多次元配列</a></li>
+                <li><a href="namespace.html">名前空間</a></li>
+
+            </ol>
+        </nav>
+
+        <div class="menu">
+            <label for="menu_bar01">講義内容</label>
+            <input type="checkbox" id="menu_bar01" />
+            <ul id="links01">
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="setup2020.html">プロジェクト作成</a></li>
+                <li><a href="zero.html">コンパイル</a></li>
+                <li><a href="one.html">出力</a></li>
+                <li><a href="two.html">表示</a></li>
+                <li><a href="three.html">算術演算子</a></li>
+                <li><a href="four.html">入力</a></li>
+                <li><a href="five.html">分岐</a></li>
+                <li><a href="six.html">繰り返し</a></li>
+                <li><a href="seven.html">配列</a></li>
+                <li><a href="eight.html">関数</a></li>
+                <li><a href="nine.html">クラス</a></li>
+                <li><a href="ten.html">最終試験</a></li>
+                <li><a href="MultiDimarray.html">多次元配列</a></li>
+                <li><a href="namespace.html">名前空間</a></li>
+            </ul>
+        </div>
+
+        <main>
+
+
+
+            <h1>目標</h1><div class="paragraph">
+                <p>配列を用いて一度に複数の変数を確保することができる。</p>
+            </div>
+            <h3>語句説明</h3>
+            <div class="paragraph">
+                <h4>配列</h4>
+                <p>棚のようなもの。棚の中1つ1つに変数が入っている。イメージ画像は4段ある棚。</p>
+                <h4>要素</h4>
+                <p>棚の中の変数1つ1つ。イメージ画像の中の引き出し1段1段。</p>
+                <p>&ltイメージ&gt</p>
+                <img src="./../image/array_base.jpg" width="200" height="250">
+                <div class="clear_l"><br /></div>
+            </div>
+            <h3>サンプル</h3>
+            <code>
+                <script src="https://gist.github.com/HinoAyase/04fafedc77d5418449182ff39348fbed.js"></script>
+            </code>
+            <h3>サンプル解説</h3>
+            <div class="paragraph">
+                <h2>#include&lt;array&gt;</h2>
+                <p>
+                    std::arrayを使えるようにするための文。
+                </p>
+                <h4>配列の宣言、要素</h4>
+                <p>
+                    配列を使うと一度に複数の変数を確保できます。宣言は<br />
+                <p class="description">
+                    std::array &lt;型, 要素数&gt; 変数名;<br />
+                <p>
+                    の形で宣言を行います。<br />
+                    要素は<strong>0から順番に数えられ、要素数-1個までの番号</strong>があります。配列は要素の中に変数が入っていて、各要素ごとに中身を変えられます。<br />
+                    各要素には<br />
+                    配列の型 [番号]<br />
+                    でアクセスできます。
+                </p>
+                <h4>配列の初期化</h4>
+                <p>
+                    a,b,cでは3通りの初期化方法を紹介しています。<br />
+                    aは宣言と同時に代入していて、{}内で0から順番にコンマ区切りで値を代入できます。<br />
+                <p class="description">
+                    例)std::array &lt;int, 3&gt; n ={3,8}<br />
+                    この方法だと、n[0]=3、n[1]=8となります。<br />
+                    また、n[2]にはこの方法のときは自動的に0が入るのでエラーが出にくくなります。<br />
+                <p>
+                    <br />
+                    bはfor文を回して、iを使ってすべての要素にアクセスしています。<br />
+                    cは後述する範囲for文を使ってすべての要素にアクセスしています。
+                </p>
+                <h4>範囲for文</h4>
+                <p>
+                    使い方<br />
+                <p class="description">
+                    for(配列と同じ型 &ループ内で使う変数名: 配列の変数名){}<br />
+                <p>
+                    <br />
+                    ループ内で使う変数名というのは、配列の中身を一旦その変数に移して実行するためです。配列の中身を書き換える場合はその変数の前に&を付けましょう。<br />
+                    範囲for文は配列の数だけループさせる文です。for文と違い、配列の要素数が変わってもコードを書き換える必要がない便利な文です。<br />
+                </p><br />
+            </div>
+            <h5>課題</h5>
+            <ul>
+                <li>・サンプルコードを実行して出力を確かめる。</li>
+                <li>
+                <li>
+                    <strong>要提出</strong>・<a href="https://gist.github.com/HinoAyase/d57e18ede1cb89d4ab51b10dc458c6cf">
+                        1から100までのフィボナッチ数列を出力するプログラムを作る。
+                        (クリックで説明を表示)
+                    </a>
+                </li>
+
+
+            </ul>
+        </main>
+        <footer>
+
+            <div class="f3">
+                <h3>club official account</h3>
+                <ul>
+                    <li>twitter:<a href="https://twitter.com/sofken_natori">@sofken-natori</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
