@@ -76,8 +76,8 @@ code {
         display: flex;
         flex-direction: row;
         -ms-flex-direction: row;
-        flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
+        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
     }
     .container {
         flex: 1 1 auto;
