@@ -47,9 +47,6 @@ code {
     color: #0ff;
     text-decoration: none;
 }
-.navigation ol:first-child a {
-    color: #ff0;
-}
 .navigation-button {
     display: block;
     position: absolute;
@@ -96,8 +93,10 @@ code {
     }
     .navigation {
         display: block;
-        padding: 0.25rem;
         border: 3px solid #630;
+    }
+    .navigation h2 {
+        padding: 0 0.5rem;
     }
     .navigation ol {
         display: flex;
