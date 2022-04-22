@@ -72,8 +72,8 @@ code {
         top: 0;
         left: 0;
         padding: 0 20px;
-        flex: 1 1 auto;
-        -ms-flex: 1 1 auto;
+        flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
     }
     .navigation {
         display: block;
