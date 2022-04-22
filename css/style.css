@@ -87,7 +87,7 @@ code {
         position: relative;
         top: 0;
         left: 0;
-        padding: 0 20px;
+        padding: 20px;
         flex: 0 1 auto;
         -ms-flex: 0 1 auto;
     }
