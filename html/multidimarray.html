@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <base href="https://ms0503.github.io/kosyukai2021/" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>1. 出力 - C++講習会2022</title>
+        <title>多次元配列 - C++講習会2022</title>
         <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
         <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
         <link href="https://unpkg.com/sanitize.css/assets.css" rel="stylesheet" />
@@ -18,47 +18,25 @@
     <body>
         <div id="container">
             <h1>C++講習会2022</h1>
-            <h2>出力</h2>
+            <h2>多次元配列</h2>
             <div class="nav-container">
             </div>
             <main>
                 <section>
-                    <h3>目標</h3>
-                    <p>コンソール画面に文字、数字を出力(表示)出来るようになる。</p>
+                    <h3>多次元配列</h3>
+                    <img src="image/double_array.png" width="400" />
+                    <p>上の図は3x3の2次元配列です。</p>
                 </section>
                 <section>
                     <h3>サンプル</h3>
                     <code>
-                        <script src="https://gist.github.com/HinoAyase/5f0d460a89ee4d0c9a44a558fd22f587.js"></script>
+                        <script src="https://gist.github.com/HinoAyase/2966f411e1357519d7c4d8a2400a82e4.js"></script>
                     </code>
                     <section>
                         <h4>解説</h4>
-                        <section>
-                            <h5>#include &lt;iostream&gt;</h5>
-                            <p><pre><code>std::cout</code></pre>や、<pre><code>std::endl</code></pre>などを使えるようにする文です。これがないとサンプルコードが動きません。</p>
-                        </section>
-                        <section>
-                            <h5>std::cout</h5>
-                            <p>
-                                std::coutは &lt;&lt; の後にある文字、数字などを出力することができます。
-                                文字列を表示したいときは&quot; &quot;で、
-                                文字のときは&apos; &apos;で囲いましょう。(間違えやすい)
-                                数字のときは囲わなくて大丈夫です。
-                            </p>
-                        </section>
-                        <section>
-                            <h5>std::endl</h5>
-                            <p>改行を入れる役割を持つ。</p>
-                        </section>
+                        <p>arr1は宣言のみ、arr2は0で初期化。arr3は1から9までで初期化してます。</p>
+                        <p>サンプルコードを出力するとarr3の中身が分かります。</p>
                     </section>
-                </section>
-                <section>
-                    <h3>課題</h3>
-                    <ul>
-                        <li>サンプルコードを実行して出力を確かめる。</li>
-                        <li>「Hello World!」を出力する</li>
-                        <li>いろいろ出力してみる</li>
-                    </ul>
                 </section>
             </main>
             <footer>

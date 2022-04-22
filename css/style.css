@@ -1,397 +1,75 @@
-﻿@charset"utf-8";
-
-    * {
-        color: #111111;
-        margin: 0;
-        padding: 0;
-    }
-
-    .strike {
-        text-decoration: line-through;
-    }
-
-    body {
-        background-color: #8e966f;
-    }
-
-
-    #wrap {
-        width: 800px;
-        margin: auto;
-        background-color: #808080;
-    }
-
-    header {
-        height: 100px;
-        width: inherit;
-        background-color: #a2a2a2;
-    }
-
-        header p {
-            font-size: 70px;
-            text-align: center;
-            padding-top: 50px;
-        }
-@media screen and (min-width:1100px) {
-    nav {
-        background-color: wheat;
-        width: 160px;
-        float: left;
-        margin-top: 0px;
-        position: fixed;
-        top: 0px;
-        left: 50%;
-        margin-left: -545px;
-    }
+@charset "UTF-8";
+body {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
 }
-
-@media screen and (max-width:1099px){
-    nav{
-        display: none;
-    }
+.nav-container {
+    display: block;
+    position: absolute;
+    top: 62px;
+    right: 0;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
 }
-
-@media screen and (min-width:1100px){
-    .menu{
-        display: none;
-    }
+.navigation {
+    display: none;
 }
-
-@media screen and (max-width:1099px){
-    .menu {
-        max-width: 800px;
+.navigation ol {
+    margin: 0;
+    padding: 0;
+}
+.navigation ol a {
+    display: block;
+}
+.navigation-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    width: 62px;
+    height: 62px;
+    background-image: url(https://ms0503.github.io/kosyukai2021/image/navbtn.png);
+    background-size: 62px;
+}
+.navigation-button:active, .navigation-button:hover {
+    background-color: #0083FF;
+}
+.navigation-effect {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+@media screen and (min-width: 600px) {
+    .nav-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 0 20px;
     }
-
-        .menu a {
-            display: block;
-            padding: 15px;
-            text-decoration: none;
-            color: #000;
-        }
-
-    label {
+    .navigation {
         display: block;
-        margin: 0 0 4px 0;
-        padding: 15px;
-        line-height: 1;
-        color: #fff;
-        background: green;
-        cursor: pointer;
     }
-
-    input {
-        display: none;
-    }
-
-    .menu ul {
-        margin: 0;
-        padding: 0;
-        background: #6dae63;
-        list-style: none;
-    }
-
-    .menu li {
-        height: 0;
-        overflow: hidden;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -ms-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-
-    #menu_bar01:checked ~ #links01 li,
-    #menu_bar02:checked ~ #links02 li {
-        height: 54px;
-        opacity: 1;
-    }
-}
-    .navigation h3 {
-        display: block;
-        width: inherit;
-        vertical-align: middle;
-        margin: 0px;
-        padding: 10px 0;
-        background-color: #ba936e;
-        border-top: double 5px #f29305;
-        border-bottom: double 5px #f29305;
-    }
-
     .navigation ol {
-        margin-left: 0px;
+        display: flex;
+        overflow: hidden;
     }
-
-    .navigation a {
-        display: block;
-        width: inherit;
-        text-decoration: none;
-        /*border-style:outset !important;*/
-        padding: 9px;
+    .navigation ol li {
+        flex: 1 1 auto;
     }
-
-        .navigation a:hover {
-            background-color: #c9b68b;
-        }
-
-    .navigation li {
-        list-style: none;
+    .navigation-button {
+        display: none;
     }
-
-
-
-    h1 {
-        font-size: 50px;
-        padding: 10px 20px 10px 20px;
-        margin-bottom: 14px;
-    }
-
-    h1 {
-        padding: 8px;
-        color: #111111;
-        border-bottom: double 5px #FFC778;
-        margin-bottom: 14px;
-        background: #ba936e;
-    }
-
-    main {
-        width: 750px;
-        padding: 100%-160px;
-        float: left;
-        margin-top: 20px;
-    }
-
-    .left {
-        margin-right: auto;
-    }
-
-    main h1 {
-        width: 750px;
-        padding: 8px;
-        margin-bottom: 4px;
-    }
-
-
-    main h1 {
-        font-size: 200%;
-        position: relative;
-        padding: 0.01em;
-        background: #f29c32;
-        color: white;
-    }
-
-        main h1::before {
-            position: absolute;
-            content: '';
-            top: 100%;
-            left: 0;
-            border: none;
-            border-right: solid 20px rgb(149, 158, 155);
-        }
-
-    main h2 {
-        font-size: 140%;
-        width: 750px;
-        padding: 8px;
-        margin-bottom: 4px;
-    }
-
-
-    main h2 {
-        font-size: 120%;
-        position: relative;
-        padding: 0.01em;
-        background: #a6bfbc;
-        color: white;
-    }
-
-        main h2::before {
-            position: absolute;
-            content: '';
-            top: 100%;
-            left: 0;
-            border: none;
-            border-right: solid 20px rgb(149, 158, 155);
-        }
-
-    main h3 {
-        width: 745px;
-        padding: 8px;
-        margin-bottom: 14px;
-    }
-
-
-
-    main h3 {
-        font-size: 140%;
-        position: relative;
-        padding: 0.1em;
-        background: #a6d3c8;
-        color: white;
-    }
-
-        main h3::before {
-            position: absolute;
-            content: '';
-            top: 100%;
-            left: 0;
-            border: none;
-            border-bottom: solid 15px transparent;
-            border-right: solid 20px rgb(149, 158, 155);
-        }
-
-
-
-
-    main h4 {
-        width: 750px;
-        padding: 8px;
-        margin-bottom: 4px;
-    }
-
-
-    main h4 {
-        font-size: 140%;
-        position: relative;
-        padding: 0.01em;
-        background: #a5b8d2;
-        color: white;
-    }
-
-        main h4::before {
-            position: absolute;
-            content: '';
-            top: 100%;
-            left: 0;
-            border: none;
-            border-right: solid 20px rgb(149, 158, 155);
-        }
-
-
-    main h5 {
-        width: 745px;
-        padding: 8px;
-        margin-bottom: 4px;
-    }
-
-
-
-    main h5 {
-        font-size: 140%;
-        position: relative;
-        padding: 0.1em;
-        background: #c4be5e;
-        color: white;
-    }
-
-        main h5::before {
-            position: absolute;
-            content: '';
-            top: 100%;
-            left: 0;
-            border: none;
-            border-right: solid 20px rgb(149, 158, 155);
-        }
-
-    main p {
-        margin-left: 10px;
-        width: 730px;
-        padding: 4px 0;
-        text-align: left;
-    }
-
-    main ul {
-        margin-left: 10px;
-        width: 730px;
-        padding: 10px;
-        list-style: none;
-        text-align: left;
-    }
-
-    .paragraph {
-        margin-left: 0px;
-    }
-
-        .paragraph h3 {
-            margin-top: 10px;
-        }
-
-        .paragraph h2 {
-            margin-top: 0px;
-        }
-
-        .paragraph h1 {
-            margin-top: 30px;
-        }
-
-    .p-description {
-        border: 1px solid #000000;
-        background-color: #DDDDDD;
-    }
-
-    .description {
-        border: 1px solid #000000;
-        background-color: #DDDDDD;
-        margin-left: 10px;
-        width: 562px;
-    }
-
-    .gist {
-        margin: 10px 0;
-    }
-
-    footer {
-        background-color: #6b8a66;
-        clear: left;
-        height: 70px;
-    }
-
-        footer li {
-            list-style: none;
-            padding-left: 5px;
-        }
-
-    .f1 {
-        float: left;
-        margin: 0 auto;
-        padding: 15px 15px;
-    }
-
-    .f2 {
-        float: left;
-        margin: 0 auto;
-        padding: 5px 15px;
-    }
-
-    .f3 {
-        float: left;
-        margin: 0 auto;
-        padding: 5px 15px;
-    }
-
-    .gist-data {
-        max-height: 500px !important;
-    }
-
-    img {
-        margin: 10px 0;
-    }
-
-    #contener {
-        width: 750px;
-        margin: 0 auto 0;
-        text-align: center;
-        background-color: #bfd1ae;
-        /*background-image: url("image/back.jpg");*/
-    }
-
-    div#submenu ul li a:hover {
-        text-decoration: underline;
-    }
-
-    .nandemo {
-        text-decoration: underline;
-    }
-
-    .hide {
-        color: #bfd1ae;
-    }
+}
