@@ -37,7 +37,7 @@ code {
     text-align: center;
 }
 .navigation li:active, .navigation li:hover {
-    background-color: #996;
+    background-color: #663;
     transition: background-color linear .3s;
     -o-transition: background-color linear .3s;
     -moz-transition: background-color linear .3s;
