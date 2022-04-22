@@ -81,6 +81,10 @@ code {
     .navigation ol {
         display: flex;
         overflow: hidden;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
     }
     .navigation ol li {
         flex: 1 1 auto;
