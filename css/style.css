@@ -95,8 +95,8 @@ code {
         top: 0;
         left: 0;
         padding: 20px;
-        flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
+        flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
     }
     .navigation {
         display: block;
