@@ -12,6 +12,9 @@ p {
     word-wrap: break-word;
     -ms-word-wrap: break-word;
 }
+pre {
+    display: inline;
+}
 code {
     font-family: 'Source Code Pro', monospace;
 }

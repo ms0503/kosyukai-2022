@@ -46,70 +46,56 @@
                         <section>
                             <h5>for(;;)</h5>
                             <p>for文は、{}の中にある処理を繰り返す文です。</p>
-                            <pre>
-                                <code>
-                                    for(変数の宣言初期化; 条件式; 変数の変化) {
-                                        処理
-                                    }
-                                </code>
-                            </pre>
+<pre><code>
+for(変数の宣言初期化; 条件式; 変数の変化) {
+    処理
+}
+</code></pre>
                             <p>変数の宣言では、繰り返すときのカウンターにする変数を宣言します。</p>
                             <p>for文は、指定した条件式がtrueの間繰り返されます。</p>
                             <p>変数の変化は主にカウンターを増加、減少させるときに使います。</p>
-                            <p>
-                                <pre>
-                                    <code>
-                                        for(int i = 0; i &lt; 5; i++){ // iが1ずつ増加していく。
-                                            // このなかで繰り返したい処理を行う。
-                                        }
-                                    </code>
-                                </pre>
-                            </p>
+<pre><code>
+for(int i = 0; i &lt; 5; i++){ // iが1ずつ増加していく。
+    // このなかで繰り返したい処理を行う。
+}
+</code></pre>
                         </section>
                         <section>
                             <h5>中身</h5>
-                            <p>
-                                <pre>
-                                    <code>
-                                        std::cout &lt;&lt; "Hello_World!!  " &lt;&lt; 1 &lt;&lt; std::endl;
-                                    </code>
-                                </pre>
+                            <span>
+<pre><code>
+std::cout &lt;&lt; "Hello_World!!  " &lt;&lt; 1 &lt;&lt; std::endl;
+</code></pre>
                                 から
-                                <pre>
-                                    <code>
-                                        std::cout &lt;&lt; "Hello_World!!  " &lt;&lt; 5 &lt;&lt; std::endl;
-                                    </code>
-                                </pre>
+<pre><code>
+std::cout &lt;&lt; "Hello_World!!  " &lt;&lt; 5 &lt;&lt; std::endl;
+</code></pre>
                                 までと、
-                                <pre>
-                                    <code>
-                                        for(int i = 1; i &lt; 6; i++) {
-                                            std::cout &lt;&lt; "Hello_World!!  " &lt;&lt; i &lt;&lt; std::endl;
-                                        }
-                                    </code>
-                                </pre>
+<pre><code>
+for(int i = 1; i &lt; 6; i++) {
+    std::cout &lt;&lt; "Hello_World!!  " &lt;&lt; i &lt;&lt; std::endl;
+}
+</code></pre>
                                 の意味は全く変わらない。
-                            </p>
+                            </span>
                         </section>
                     </section>
                 </section>
                 <section>
-                    <h3>サンプル2</h3>
+                    <h3>サンプル２</h3>
                     <code>
                         <script src="https://gist.github.com/HinoAyase/b1a543491d429fee0c1baf2cc258684b.js"></script>
                     </code>
                     <section>
-                        <h4>サンプル2解説</h4>
+                        <h4>解説</h4>
                         <section>
                             <h5>while()</h5>
                             <p>while文は、{}の中にある処理を繰り返す文です。</p>
-                            <pre>
-                                <code>
-                                    while(条件式) {
-                                        処理
-                                    }
-                                </code>
-                            </pre>
+<pre><code>
+while(条件式) {
+    処理
+}
+</code></pre>
                             <p>
                                 whileは、指定した条件式がtrueの間繰り返されます。
                                 主に何回繰り返すか分からない処理に使われます。
@@ -117,13 +103,11 @@
                         </section>
                         <section>
                             <h5>中身</h5>
-                            <pre>
-                                <code>
-                                    while(input != 0) { // inputが0以外のときtrue。
-                                        // このなかで繰り返したい処理を行う。
-                                    }
-                                </code>
-                            </pre>
+<pre><code>
+while(input != 0) { // inputが0以外のときtrue。
+    // このなかで繰り返したい処理を行う。
+}
+</code></pre>
                             <p>入力が0でない間、入力された数字を加算することを繰り返します。</p>
                         </section>
                     </section>

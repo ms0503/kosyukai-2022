@@ -48,7 +48,7 @@
                             <h5>条件式の中身</h5>
                             <span>
                                 条件式には、
-                                <table class="description">
+                                <table>
                                     <tr><td>a == b</td><td>aとbが同じ</td></tr>
                                     <tr><td>a != b</td><td>aとbが異なる</td></tr>
                                     <tr><td>a &lt; b</td><td>aがb未満</td></tr>
@@ -64,57 +64,49 @@
                         <section>
                             <h5>if文</h5>
                             <p>if文は、{}の中にある処理を条件式がtrueの場合実行します。</p>
-                            <pre>
-                                <code>
-                                    if(条件式) {
-                                        処理
-                                    }
-                                </code>
-                            </pre>
+<pre><code>
+if(条件式) {
+    処理
+}
+</code></pre>
                         </section>
                         <section>
                             <h5>else if文</h5>
                             <p>else if文は、{}の中にある処理をそれより上にあるif文・else if文の条件式を満たさず、且つ条件式がtrueの場合実行します。必ずif文と組み合わせて使います。</p>
-                            <pre>
-                                <code>
-                                    if(条件式) {
-                                        処理
-                                    }
-                                    else if(条件式) {
-                                        処理
-                                    }
-                                </code>
-                            </pre>
+<pre><code>
+if(条件式) {
+    処理
+}
+else if(条件式) {
+    処理
+}
+</code></pre>
                         </section>
                         <section>
                             <h5>else文</h5>
                             <p>else文は、{}の中にある処理をそれより上にあるif文・else if文の条件式をいずれも満たさなかった場合実行します。必ずif文と組み合わせて使います。</p>
-                            <pre>
-                                <code>
-                                    if(条件式) {
-                                        処理
-                                    }
-                                    else {
-                                        処理
-                                    }
-                                </code>
-                            </pre>
+<pre><code>
+if(条件式) {
+    処理
+}
+else {
+    処理
+}
+</code></pre>
                         </section>
                         <section>
                             <h5>switch-case文</h5>
                             <p>switch-case文はswitch文の変数と、case文の後にある値が同じであればcase節を実行します。default文はcase文の条件に1つも当てはまらないときにdefault節を実行します。</p>
-                            <pre>
-                                <code>
-                                    switch(変数) {
-                                        case 値:
-                                            処理
-                                            break;
-                                        default:
-                                            処理
-                                            break;
-                                    }
-                                </code>
-                            </pre>
+<pre><code>
+switch(変数) {
+    case 値:
+        処理
+        break;
+    default:
+        処理
+        break;
+}
+</code></pre>
                         </section>
                         <section>
                             <h5>break文</h5>
@@ -128,10 +120,10 @@
                         <script src="https://gist.github.com/HinoAyase/4e1fd2627f0239d29659fa18footer-contents24ed86.js"></script>
                     </code>
                     <section>
-                        <h4>サンプル2解説</h4>
+                        <h4>解説</h4>
                         <section>
                             <h5>条件式がbool型の場合</h5>
-                            <p>もし<pre><code>a == true</code></pre>という条件式を書きたい場合trueの場合のみ<pre><code> == true</code></pre>を省略することができます。</p>
+                            <span>もし<pre><code>a == true</code></pre>という条件式を書きたい場合trueの場合、<pre><code> == true</code></pre>を省略することができます。</span>
                         </section>
                     </section>
                 </section>

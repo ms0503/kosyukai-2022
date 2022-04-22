@@ -43,20 +43,18 @@
                         <h4>解説</h4>
                         <section>
                             <h5>クラスの作り方</h5>
-                            <pre>
-                                <code>
-                                    class クラス名 {
-                                        public:
-                                            プログラム内で使える変数、関数を宣言する。
-                                            クラス名() {
-                                                変数の初期化をする。
-                                            }
+<pre><code>
+class クラス名 {
+    public:
+        プログラム内で使える変数、関数を宣言する。
+        クラス名() {
+            変数の初期化をする。
+        }
 
-                                        private:
-                                            クラス内でしか使えない変数、関数を宣言する。
-                                    }; ←セミコロンが必要。
-                                </code>
-                            </pre>
+    private:
+        クラス内でしか使えない変数、関数を宣言する。
+}; ←セミコロンが必要。
+</code></pre>
                         </section>
                     </section>
                 </section>
@@ -64,18 +62,16 @@
                     <h3>クラスの使い方</h3>
                     <section>
                         <h4>クラスを使った変数の宣言</h4>
-                        <pre>
-                            <code>
-                                クラス名 変数名;
-                            </code>
-                        </pre>
+<pre><code>
+クラス名 変数名;
+</code></pre>
                     </section>
                     <section>
                         <h4>変数、関数へのアクセス</h4>
-                        <p>
+                        <span>
                             宣言した変数名.publicに書いた変数名(e.g. <pre><code>normal_car.oil</code></pre>)
                             クラスを使って変数を宣言すると、あらかじめクラスに書いた変数を使うことができます。
-                        </p>
+                        </span>
                     </section>
                 </section>
                 <section>
@@ -88,21 +84,19 @@
                 </section>
                 <section>
                     <h3>class内の変数の初期化</h3>
-                    <p>
+                    <span>
                         class内の変数は
-                        <pre>
-                            <code>
-                                クラス名() {
-                                変数 = 代入;
-                                }
-                            </code>
-                        </pre>
+<pre><code>
+クラス名() {
+    変数 = 代入;
+}
+</code></pre>
                         で初期化してください。これも通常の変数同様、<strong>必ず初期化をしてください。</strong>
-                    </p>
+                    </span>
                     <p>サンプルは車を模したクラスを作り、normal_carという車を宣言し、走らせています。</p>
                 </section>
                 <section>
-                <h3>課題</h3>
+                    <h3>課題</h3>
                     <ul>
                         <li>サンプルコードを実行して出力を確かめる。</li>
                     </ul>

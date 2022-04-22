@@ -45,21 +45,21 @@
                         <script src="https://gist.github.com/HinoAyase/04fafedc77d5418449182ffooter-contents9348fbed.js"></script>
                     </code>
                     <section>
-                        <h4>サンプル解説</h4>
+                        <h4>解説</h4>
                         <section>
                             <h5>#include&lt;array&gt;</h5>
-                            <p><pre><code>std::array</code></pre>を使えるようにするための文。</p>
+                            <span><pre><code>std::array</code></pre>を使えるようにするための文。</span>
                         </section>
                         <section>
                             <h5>配列の宣言、要素</h5>
-                            <p>
+                            <span>
                                 配列を使うと一度に複数の変数を確保できます。
                                 宣言は<pre><code>std::array &lt;型, 要素数&gt; 配列名;</code></pre>の形で行います。
-                            </p>
-                            <p>
+                            </span>
+                            <span>
                                 要素は<strong>0から順番に数えられ、要素数-1個までの番号</strong>があります。配列は要素の中に変数が入っていて、各要素ごとに中身を変えられます。
                                 各要素には<pre><code>配列[番号]</code></pre>でアクセスできます。
-                            </p>
+                            </span>
                         </section>
                         <section>
                             <h5>配列の初期化</h5>
@@ -67,12 +67,12 @@
                                 a・b・cでは3通りの初期化方法を紹介しています。
                                 aは宣言と同時に代入していて、{}内で0から順番にコンマ区切りで値を代入できます。
                             </p>
-                            <p>
+                            <span>
                                 例：
                                 <pre><code>std::array &lt;int, 3&gt; n = { 3, 8 }</code></pre>
                                 この方法だと、<pre><code>n[0] == 3</code></pre>、<pre><code>n[1] == 8</code></pre>となります。
                                 また、<pre><code>n[2]</code></pre>にはこの方法のときは自動的に0が入るのでエラーが出にくくなります。
-                            </p>
+                            </span>
                             <p>
                                 bはfor文を回して、iを使ってすべての要素にアクセスしています。
                                 cは後述する範囲for文を使ってすべての要素にアクセスしています。
@@ -83,7 +83,7 @@
                             <p>使い方</p>
                             <pre><code>for(配列と同じ型 &ループ内で使う変数名 : 配列名) {}</code></pre>
                             <p>
-                                ループ内で使う変数名というのは、配列の中身を一旦その変数に移して実行するためです。配列の中身を書き換える場合はその変数の前に&を付けましょう。
+                                ループ内で使う変数名というのは、配列の中身を一旦その変数に移して実行するためです。配列の中身を書き換える場合はその変数の前に&amp;を付けましょう。
                             </p>
                             <p>
                                 範囲for文は配列の数だけループさせる文です。for文と違い、配列の要素数が変わってもコードを書き換える必要がない便利な文です。
