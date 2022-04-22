@@ -1,10 +1,9 @@
 @charset "UTF-8";
 body {
-    display: flex;
-    flex-direction: row;
-    -ms-flex-direction: row;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
+    background: #999966;
+}
+.container {
+    display: block;
 }
 .nav-container {
     display: block;
@@ -15,8 +14,6 @@ body {
     margin: 0;
     padding: 0;
     width: 200px;
-    flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
 }
 .navigation {
     display: none;
@@ -53,11 +50,24 @@ body {
     z-index: 10;
 }
 @media screen and (min-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+    }
+    .container {
+        flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+    }
     .nav-container {
         position: relative;
         top: 0;
         left: 0;
         padding: 0 20px;
+        flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
     }
     .navigation {
         display: block;
