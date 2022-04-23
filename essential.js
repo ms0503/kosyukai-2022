@@ -1,6 +1,6 @@
 function removeMenu(shade) {
     shade.remove();
-    $('.nav-container').slideUp('fast');
+    $('#slidemenu').slideUp('fast');
 }
 $.ajax({
     dataType: 'html',
@@ -17,6 +17,6 @@ $('.navigation-button').on('click', e => {
         $('<div>').addClass('navigation-effect').on('click', () => {
             removeMenu(this);
         }).appendTo($('body'));
-        $('.navigation').slideDown('fast');
+        $('#slidemenu').slideDown('fast');
     } else removeMenu(shade);
 });
