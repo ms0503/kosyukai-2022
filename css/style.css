@@ -16,6 +16,7 @@ pre {
     display: inline;
 }
 code {
+    background: #999;
     font-family: 'Source Code Pro', monospace;
 }
 .container {
