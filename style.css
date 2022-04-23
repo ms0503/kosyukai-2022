@@ -30,7 +30,6 @@ code {
 }
 .nav-container {
     display: block;
-    background: #cc6;
     position: absolute;
     top: 0;
     right: 0;
@@ -43,6 +42,7 @@ code {
     display: none;
 }
 .navigation {
+    background: #cc6;
     position: absolute;
     top: 62px;
     right: 0;
