@@ -124,6 +124,8 @@ code {
     }
     .navigation-list {
         display: flex;
+        position: relative;
+        top: 0;
         overflow: hidden;
         flex-direction: column;
         -ms-flex-direction: column;
@@ -131,8 +133,6 @@ code {
         -ms-flex-wrap: nowrap;
     }
     .navigation-list li {
-        position: relative;
-        top: 0;
         flex: 1 1 auto;
     }
     .navigation-button {
