@@ -61,7 +61,7 @@
     <body>
         <nav>
             <div class="nav-container">
-                <a class="navigation-button" href="javascript:void(0)"></a>
+                <div class="navigation-button"></div>
                 <div id="slidemenu" class="navigation">
                     <h2>講習一覧</h2>
                     <ul class="navigation-list">
@@ -227,10 +227,6 @@ int kazu; // NG(プログラミングにおいては英語が推奨される)
                 shade.remove();
                 $('#slidemenu').slideUp('fast');
             }
-            $.ajax({
-                dataType: 'html',
-                url: 'https://ms0503.github.io/kosyukai2021/navigation.html'
-            }).done(data => $('.nav-container').html(data));
             $.ajax({
                 dataType: 'html',
                 url: 'https://ms0503.github.io/kosyukai2021/footer.html'

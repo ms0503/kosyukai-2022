@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
-    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
     background: #996;
@@ -12,10 +12,10 @@ body {
 }
 p {
     overflow-wrap: break-word;
-    word-break: break-all;
     -ms-word-break: break-all;
-    word-wrap: break-word;
+    word-break: break-all;
     -ms-word-wrap: break-word;
+    word-wrap: break-word;
 }
 pre {
     display: inline;
@@ -69,10 +69,10 @@ code {
 .navigation-list li:active,
 .navigation-list li:hover {
     background-color: #663;
-    transition: background-color linear .3s;
     -o-transition: background-color linear .3s;
     -moz-transition: background-color linear .3s;
     -webkit-transition: background-color linear .3s;
+    transition: background-color linear .3s;
 }
 .navigation-list a {
     display: block;
@@ -110,22 +110,22 @@ code {
 @media screen and (min-width: 600px) {
     body {
         display: flex;
-        flex-direction: row;
         -ms-flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: row;
         -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
     .container {
-        flex: 1 1 auto;
         -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
     }
     .nav-container {
         position: relative;
         top: 0;
         left: 0;
         padding: 20px;
-        flex: 0 0 auto;
         -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
     }
     #slidemenu {
         display: block;
@@ -147,10 +147,10 @@ code {
         position: relative;
         top: 0;
         overflow: hidden;
-        flex-direction: column;
         -ms-flex-direction: column;
-        flex-wrap: nowrap;
+        flex-direction: column;
         -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
     .navigation-list li {
         padding: 0.5rem;
