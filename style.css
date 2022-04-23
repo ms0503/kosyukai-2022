@@ -31,10 +31,6 @@ code {
 .nav-container {
     display: block;
     background: #cc6;
-    position: absolute;
-    top: 62px;
-    right: 0;
-    z-index: 20;
     margin: 0;
     padding: 0;
     width: 200px;
@@ -43,6 +39,10 @@ code {
     display: none;
 }
 .navigation-list {
+    position: absolute;
+    top: 62px;
+    right: 0;
+    z-index: 20;
     margin: 0;
     padding: 0;
     list-style: none;
