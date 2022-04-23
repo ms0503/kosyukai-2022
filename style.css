@@ -64,6 +64,7 @@ code {
     -webkit-transition: background-color linear .3s;
 }
 .navigation-list a {
+    display: block;
     color: #0ff;
     text-decoration: none;
 }
