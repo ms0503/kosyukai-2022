@@ -18,7 +18,7 @@
             $('<div>').addClass('navigation-effect').on('click', () => {
                 removeMenu(this);
             }).appendTo($('body'));
-            $('.nav-container').slideDown('fast');
+            $('.navigation').slideDown('fast');
         } else removeMenu(shade);
     });
 })(jQuery);
