@@ -127,8 +127,10 @@ code {
         flex: 0 0 auto;
         -ms-flex: 0 0 auto;
     }
-    .navigation {
+    #slidemenu {
         display: block;
+    }
+    .navigation {
         position: relative;
         top: 0;
         left: 0;
