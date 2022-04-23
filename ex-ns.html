@@ -2,15 +2,8 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <base href="https://hinoayase.github.io/kosyukai2021/" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>名前空間 - C++講習会2022</title>
-        <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
-        <link href="https://unpkg.com/sanitize.css/forms.css" rel="stylesheet" />
-        <link href="https://unpkg.com/sanitize.css/assets.css" rel="stylesheet" />
-        <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet" />
-        <link href="https://unpkg.com/sanitize.css/reduce-motion.css" rel="stylesheet" />
-        <link href="https://unpkg.com/sanitize.css/system-ui.css" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
         <meta name="msapplication-square70x70logo" content="site-tile-70x70.png" />
         <meta name="msapplication-square150x150logo" content="site-tile-150x150.png" />
@@ -138,7 +131,7 @@ namespace 名称 {
             }
             $.ajax({
                 dataType: 'html',
-                url: 'https://hinoayase.github.io/kosyukai2021/footer.html'
+                url: 'footer.html'
             }).done(data => $('.footer-contents').html(data));
             $('.navigation-button').on('click', e => {
                 e.preventDefault();
