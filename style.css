@@ -94,7 +94,7 @@ code {
     z-index: 30;
     width: 62px;
     height: 62px;
-    background-image: url(image/navbtn.webp) url(image/navbtn.png);
+    background-image: url(image/navbtn.webp?307b63743a92ab1a2ae9d59208aa4728) url(image/navbtn.png?1f9ee55ccf345bcd80148a7a2361a7d5);
     background-size: 62px;
 }
 .navigation-button:active, .navigation-button:hover {
