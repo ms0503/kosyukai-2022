@@ -79,7 +79,7 @@ code {
     display: block;
     background-color: #993;
     padding: 0;
-    border-bottom: 1px solid #663;
+    border-top: 1px solid #663;
     text-align: center;
 }
 .navigation-list li:active, .navigation-list li:hover {
