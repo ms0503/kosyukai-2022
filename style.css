@@ -125,12 +125,21 @@ code {
 @media screen and (min-width: 600px) {
     body {
         display: flex;
-        -ms-flex-direction: row;
-        flex-direction: row;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
     .container {
+        display: flex;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    .nav {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     }
@@ -168,9 +177,18 @@ code {
         flex-wrap: nowrap;
     }
     .navigation-list li {
+        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     }
     .navigation-button {
         display: none;
+    }
+    .contents {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    }
+    .footer {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
     }
 }
