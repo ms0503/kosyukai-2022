@@ -59,7 +59,7 @@ code {
 }
 .navigation {
     background: #cc6;
-    position: absolute;
+    position: fixed;
     top: 62px;
     right: 0;
     z-index: 20;
