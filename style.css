@@ -78,7 +78,7 @@ code {
 .navigation-list li {
     display: block;
     background-color: #993;
-    padding: 15px 20px;
+    padding: 0;
     border-bottom: 1px solid #663;
     text-align: center;
 }
@@ -92,6 +92,7 @@ code {
 .navigation-list a {
     display: block;
     color: #0ff;
+    padding: 0.75rem 0.5rem;
     line-height: 100%;
 }
 .navigation-button {
@@ -167,7 +168,6 @@ code {
         flex-wrap: nowrap;
     }
     .navigation-list li {
-        padding: 0.5rem;
         flex: 1 1 auto;
     }
     .navigation-button {
