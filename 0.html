@@ -11,10 +11,10 @@
         <meta http-equiv="content-security-policy" content="default-src 'self'; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://gist.github.com; style-src 'self' 'unsafe-inline' https://cdn.skypack.dev https://fonts.googleapis.com https://unpkg.com" />
         <meta http-equiv="strict-transport-security" content="max-age=31536000" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>TOP - C++講習会2022</title>
-        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="TOP" />
+        <title>0. コンパイル - C++講習会2022</title>
+        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/0.html" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="0. コンパイル" />
         <meta property="og:site_name" content="C++講習会2022" />
         <meta property="og:locale" content="ja_JP" />
         <link rel="stylesheet" href="style.min.css?f0218ce1530afe1f7ea82162aa5c79c4" />
@@ -92,36 +92,138 @@
         </nav>
         <div class="container">
             <h1>C++講習会2022</h1>
-            <h2>プログラムの基礎を学ぼう！</h2>
-            <h3>ソフトウェア研究部会へようこそ！</h3>
-            <p>
-                この講習会は、プログラミングの基礎を学ぶために作られたものです。<br />
-                最初は理解するのに時間がかかるかもしれませんが&quot;やればやるだけ&quot;<br />
-                身に付くので根気詰めすぎないよう頑張ってください。
-            </p>
+            <h2>コンパイル</h2>
             <main>
-                <h4>０．コンパイル</h3>
-                <p>コンパイルしてみよう。</p>
-                <h4>１．出力</h3>
-                <p>std::coutを理解して標準出力に出力してみよう。</p>
-                <h4>２．表示</h3>
-                <p>変数と型、constを理解し、変数に格納してからコンソール画面に出力できるようになろう。</p>
-                <h4>３．演算子</h4>
-                <p>演算子を理解し、四則演算ができるようになろう。</p>
-                <h4>４．入力</h4>
-                <p>std::cinを理解し、標準入力から値を受け取ってみよう。</p>
-                <h4>５．分岐</h4>
-                <p>条件分岐を理解し、if・switchが使えるようになろう。</p>
-                <h4>６．繰り返し</h4>
-                <p>繰り返しを理解し、for・whileが使えるようになろう。</p>
-                <h4>７．配列</h4>
-                <p>配列を理解し、std::array・for・eachを使えるようになろう。</p>
-                <h4>８．関数</h4>
-                <p>関数を理解し使えるようになろう。</p>
-                <h4>９．クラス</h4>
-                <p>classを理解し使えるようになろう。</p>
-                <h4>１０．最終試験</h4>
-                <p>三目並べを制作し、講習会を卒業しよう。</p>
+                <section>
+                    <h3>目標</h3>
+                    <p>コンパイルを行う。講習会の雰囲気に慣れる。</p>
+                </section>
+                <section>
+                    <h3>先輩からのお願い</h3>
+                    <p>1章からは各自で勉強して頂くことになりますが、お願いがあります。</p>
+                    <ul>
+                        <li>分からなかったらすぐ先輩に聞く。(優しく教えます。)</li>
+                        <li>2日から3日で一つの章を終わらせるペースでやる。(進む分にはOK)</li>
+                        <li>部室には週2・3日は来てほしい。(部活内交流や進捗確認のため)</li>
+                        <li>毎週金曜日17時からのミーティングには必ず来てほしい。</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>語句説明</h3>
+                    <section>
+                        <h4>プログラム</h4>
+                        <p>コンピューターが解釈・動作できるデータ。</p>
+                    </section>
+                    <section>
+                        <h4>プログラミング言語</h4>
+                        <p>コンピュータに解釈できるようにつくられた人工言語。コンピューターへ指令を出すため使われる。</p>
+                    </section>
+                    <section>
+                        <h4>プログラミング</h4>
+                        <p>プログラミング言語を使用して、プログラムを作成すること。</p>
+                    </section>
+                    <section>
+                        <h4>C++</h4>
+                        <p>&quot;しーぷらすぷらす&quot;(読み方)というプログラミング言語。もっぱら&quot;しーぷら&quot;、&quot;しーぷらぷら&quot;、&quot;ぷらぷら&quot;と呼ばれる。今から講習会で習っていく言語。</p>
+                    </section>
+                </section>
+                <section>
+                    <h3>サンプル</h3>
+                    <code>
+                        <script src="https://gist.github.com/HinoAyase/71cf86e2034ece6a9431be608521e8cd.js"></script>
+                    </code>
+                    <section>
+                        <h4>コードについて</h4>
+                        <p>まずはコードの中身の解説に入る前に一部の記号がどんな役割を持つか説明します。</p>
+                        <section>
+                            <h5>コメント</h5>
+<pre><code>
+// スラッシュ二つでこれ以降の文字全部
+/*
+* ←スラッシュとアスタリスクで括ると、括った部分全てをコメントアウトし、プログラムの動作には影響しなくなります。
+*/
+</code></pre>
+                            <p>
+                                なので、
+                                <code>
+                                    <script src="https://gist.github.com/HinoAyase/cca751bd8e3fd2ae6ba196ea2fb909footer-contents.js"></script>
+                                </code>
+                                とかやってもサンプルコードとやっていることは同じです。
+                            </p>
+                        </section>
+                        <section>
+                            <h5>セミコロン</h5>
+                            <p>;←これのこと。文の終わりに<strong>必ず付けないといけません。</strong></p>
+                        </section>
+                        <section>
+                            <h5>インデント</h5>
+                            <p>{}内に入っているコードを1段ずらし、コードを見やすくすること。やり方は下に書いてます。</p>
+                        </section>
+                        <section>
+                            <h5>全角文字</h5>
+                            <p>日本語や全角スペースのこと。コード内にコメント以外で入れてしまうとコードとして認識しなくなってしまうので気を付けよう。</p>
+                            <p>ただしC++11からは変数名・クラス名・関数名などに意図的に使用することが可能となった。</p>
+                        </section>
+                        <section>
+                            <h5>実行される順番</h5>
+                            <p><strong>コードは上から下に向かって順番に実行されます。</strong>これは基本的にどんなコードでも同じです。</p>
+                        </section>
+                        <section>
+                            <h5>ショートカットキー</h5>
+                            <p>色々なショートカットキーがありますが特に便利なものを紹介します。</p>
+                        </section>
+                        <section>
+                            <h5>Ctrl+Z</h5>
+                            <p>操作を間違えた場合などに使います。例えば、ゴミ箱に削除したファイルを元に戻したい場合などに役立ちます。</p>
+                            <p>いわゆるUndo(アンドゥ)ってやつです。</p>
+                        </section>
+                        <section>
+                            <h5>Ctrl+X</h5>
+                            <p>選択した項目を切り取ります。</p>
+                            <p>いわゆるCut(カット・切り取り)、Delete(デリート・削除)ってやつです。</p>
+                        </section>
+                        <section>
+                            <h5>Ctrl+C</h5>
+                            <p>選択した項目をコピーします。</p>
+                            <p>いわゆるCopy(コピー)、Yank(ヤンク)ってやつです。</p>
+                        </section>
+                        <section>
+                            <h5>Ctrl+V</h5>
+                            <p>コピーした項目を貼り付けます。</p>
+                            <p>いわゆるPaste(ペースト・貼り付け)、Put(プット・出力)ってやつです。</p>
+                        </section>
+                        <section>
+                            <h5>Ctrl+Y</h5>
+                            <p>[Ctrl]+[Z]キーで元に戻した操作は、[Ctrl]+[Y]キーを押してやり直すことができます。例えば、操作を間違えたと思って元に戻したけれど、やっぱり操作後の状態でよかったという場面で利用します。</p>
+                            <p>いわゆるRedo(リドゥ)ってやつです。</p>
+                        </section>
+                        <section>
+                            <h5>Ctrl+A</h5>
+                            <p>すべて選択します。</p>
+                            <p>いわゆるSelect All(セレクトオール・全選択)ってやつです。</p>
+                        </section>
+                        <section>
+                            <h5>Ctrl+K → Ctrl+D</h5>
+                            <p>選択された行のインデントが揃います。</p>
+                            <p>いわゆる名称はないものの、Visual Studioの便利な機能。</p>
+                        </section>
+                    </section>
+                    <section>
+                        <h4>解説</h4>
+<pre><code>
+int main(void) {
+    ここに書いたことがプログラムとして実行されます。
+    return 0; // ←これはプログラムの終わりを表します。
+}
+</code></pre>
+                    </section>
+                </section>
+                <section>
+                    <h3>課題</h3>
+                    <ul>
+                        <li>Visual Studio(以下VS)を立ち上げて、サンプルコードを実行する。</li>
+                    </ul>
+                </section>
             </main>
             <footer>
                 <div class="footer-contents">

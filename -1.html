@@ -10,11 +10,10 @@
         <meta http-equiv="x-xss-protection" content="1; mode=block" />
         <meta http-equiv="content-security-policy" content="default-src 'self'; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://gist.github.com; style-src 'self' 'unsafe-inline' https://cdn.skypack.dev https://fonts.googleapis.com https://unpkg.com" />
         <meta http-equiv="strict-transport-security" content="max-age=31536000" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>TOP - C++講習会2022</title>
-        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="TOP" />
+        <title>-1. プロジェクト作成 - C++講習会2022</title>
+        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/-1.html" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="-1. プロジェクト作成" />
         <meta property="og:site_name" content="C++講習会2022" />
         <meta property="og:locale" content="ja_JP" />
         <link rel="stylesheet" href="style.min.css?f0218ce1530afe1f7ea82162aa5c79c4" />
@@ -92,36 +91,55 @@
         </nav>
         <div class="container">
             <h1>C++講習会2022</h1>
-            <h2>プログラムの基礎を学ぼう！</h2>
-            <h3>ソフトウェア研究部会へようこそ！</h3>
-            <p>
-                この講習会は、プログラミングの基礎を学ぶために作られたものです。<br />
-                最初は理解するのに時間がかかるかもしれませんが&quot;やればやるだけ&quot;<br />
-                身に付くので根気詰めすぎないよう頑張ってください。
-            </p>
+            <h2>プロジェクト作成</h2>
             <main>
-                <h4>０．コンパイル</h3>
-                <p>コンパイルしてみよう。</p>
-                <h4>１．出力</h3>
-                <p>std::coutを理解して標準出力に出力してみよう。</p>
-                <h4>２．表示</h3>
-                <p>変数と型、constを理解し、変数に格納してからコンソール画面に出力できるようになろう。</p>
-                <h4>３．演算子</h4>
-                <p>演算子を理解し、四則演算ができるようになろう。</p>
-                <h4>４．入力</h4>
-                <p>std::cinを理解し、標準入力から値を受け取ってみよう。</p>
-                <h4>５．分岐</h4>
-                <p>条件分岐を理解し、if・switchが使えるようになろう。</p>
-                <h4>６．繰り返し</h4>
-                <p>繰り返しを理解し、for・whileが使えるようになろう。</p>
-                <h4>７．配列</h4>
-                <p>配列を理解し、std::array・for・eachを使えるようになろう。</p>
-                <h4>８．関数</h4>
-                <p>関数を理解し使えるようになろう。</p>
-                <h4>９．クラス</h4>
-                <p>classを理解し使えるようになろう。</p>
-                <h4>１０．最終試験</h4>
-                <p>三目並べを制作し、講習会を卒業しよう。</p>
+                <section>
+                    <h3>Visual Studio 2019のプロジェクト作成</h3>
+                    <p>プロジェクト作成とソースファイルの作成方法について書いておきます。分からなくなったらこのページを開いてください。</p>
+                    <section>
+                        <h4>１．プロジェクト作成</h4>
+                        <picture>
+                            <source srcset="image/start.webp" type="image/webp" />
+                            <img src="image/start.png" width="574" alt="" />
+                        </picture>
+                        <p>Visual Studio 2019(以降VS)を立ち上げると最初に上のような画面が出てきます。この画面の右下の辺りにある「新しいプロジェクトの作成」(赤丸)をクリックしてください。</p>
+                        <picture>
+                            <source srcset="image/select.webp?30bad728bf088d7db6f1e43febed3a0f" type="image/webp" />
+                            <img src="image/select.png?5d0a2855556b1fc074965b04bbf5cab8" width="574" alt="" />
+                        </picture>
+                        <p>すると上のようなウィンドウが出てきます。左上の赤丸から「Visual C++」、「空のプログラム」の順にクリックし、下の「名前」(緑枠)でプロジェクト名を決めて「OK」をクリックします。今回はtest_projectという名前にしました。</p>
+                        <picture>
+                            <source srcset="image/project.webp?b7c218f2753219e442a2277f344c46aa" type="image/webp" />
+                            <img src="image/project.png?48075a6e38273207ad9b3342f2d94d57" width="574" alt="" />
+                        </picture>
+                        <p>これでプロジェクトの作成は完了です。次はソースファイルの追加についてです。</p>
+                    </section>
+                    <section>
+                        <h4>２．ソースファイルの追加</h4>
+                        <picture>
+                            <source srcset="image/add.webp?8a453668d6950460502732a3d25c3a03" type="image/webp" />
+                            <img src="image/add.png?ee0a08d7d1e919c2a03c224d5b729060" width="574" alt="" />
+                        </picture>
+                        <p>
+                            ソリューションエクスプローラーにある「ソースファイル」(青矢印)を右クリックし、「追加」から「新しい項目」をクリックします。
+                            ソリューションエクスプローラーが出てこない場合は下の画像のように表示から「ソリューションエクスプローラー」をクリックして表示させてください。
+                        </p>
+                        <picture>
+                            <source srcset="image/solution.webp?7be5d01a1bf6a7349e333506fd089545" type="image/webp" />
+                            <img src="image/solution.png?80e3606908458c9045bfea7c7185082c" width="574" alt="" />
+                        </picture>
+                        <picture>
+                            <source srcset="image/source.webp?2549bf68d1bacf96156322e2d1d84dbb" type="image/webp" />
+                            <img src="image/source.png?22f3837cf9eb6840a18e0621d4e8cee1" width="574" alt="" />
+                        </picture>
+                        <p>新しい項目をクリックすると上のようなウィンドウが出てきます。左上の赤丸から「Visual C++」・「C++ファイル」の順にクリックし、下の「名前」(緑枠)でソースファイル名を決めて「OK」をクリックします。今回はmain.cppという名前にしました。</p>
+                        <picture>
+                            <source srcset="image/complete.webp?2b98f57fafc1cc0105cdcb1649c1c797" type="image/webp" />
+                            <img src="image/complete.png?232134acc7395ac30cb5e621777059fe" width="574" alt="" />
+                        </picture>
+                        <p>以上でソースファイルの作成は完了です。</p>
+                    </section>
+                </section>
             </main>
             <footer>
                 <div class="footer-contents">

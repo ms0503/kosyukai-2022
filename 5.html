@@ -11,10 +11,10 @@
         <meta http-equiv="content-security-policy" content="default-src 'self'; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://gist.github.com; style-src 'self' 'unsafe-inline' https://cdn.skypack.dev https://fonts.googleapis.com https://unpkg.com" />
         <meta http-equiv="strict-transport-security" content="max-age=31536000" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>TOP - C++講習会2022</title>
-        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="TOP" />
+        <title>5. 分岐 - C++講習会2022</title>
+        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/5.html" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="5. 分岐" />
         <meta property="og:site_name" content="C++講習会2022" />
         <meta property="og:locale" content="ja_JP" />
         <link rel="stylesheet" href="style.min.css?f0218ce1530afe1f7ea82162aa5c79c4" />
@@ -92,36 +92,120 @@
         </nav>
         <div class="container">
             <h1>C++講習会2022</h1>
-            <h2>プログラムの基礎を学ぼう！</h2>
-            <h3>ソフトウェア研究部会へようこそ！</h3>
-            <p>
-                この講習会は、プログラミングの基礎を学ぶために作られたものです。<br />
-                最初は理解するのに時間がかかるかもしれませんが&quot;やればやるだけ&quot;<br />
-                身に付くので根気詰めすぎないよう頑張ってください。
-            </p>
+            <h2>分岐</h2>
             <main>
-                <h4>０．コンパイル</h3>
-                <p>コンパイルしてみよう。</p>
-                <h4>１．出力</h3>
-                <p>std::coutを理解して標準出力に出力してみよう。</p>
-                <h4>２．表示</h3>
-                <p>変数と型、constを理解し、変数に格納してからコンソール画面に出力できるようになろう。</p>
-                <h4>３．演算子</h4>
-                <p>演算子を理解し、四則演算ができるようになろう。</p>
-                <h4>４．入力</h4>
-                <p>std::cinを理解し、標準入力から値を受け取ってみよう。</p>
-                <h4>５．分岐</h4>
-                <p>条件分岐を理解し、if・switchが使えるようになろう。</p>
-                <h4>６．繰り返し</h4>
-                <p>繰り返しを理解し、for・whileが使えるようになろう。</p>
-                <h4>７．配列</h4>
-                <p>配列を理解し、std::array・for・eachを使えるようになろう。</p>
-                <h4>８．関数</h4>
-                <p>関数を理解し使えるようになろう。</p>
-                <h4>９．クラス</h4>
-                <p>classを理解し使えるようになろう。</p>
-                <h4>１０．最終試験</h4>
-                <p>三目並べを制作し、講習会を卒業しよう。</p>
+                <section>
+                    <h3>目標</h3>
+                    <p>条件によって行う処理を変更することができる。</p>
+                </section>
+                <section>
+                    <h3>語句説明</h3>
+                    <section>
+                        <h4>条件式</h4>
+                        <p>結果がtrueかfalseになる式のこと。条件式の条件が満たされているときtrueになる、満たされていないときfalseになる。</p>
+                    </section>
+                    <section>
+                        <h4>true/false</h4>
+                        <p>trueは真、falseは偽を表す。</p>
+                    </section>
+                </section>
+                <section>
+                    <h3>サンプル１</h3>
+                    <code>
+                        <script src="https://gist.github.com/HinoAyase/a11cfdb2cf45a7e4b3a168ddd3d19423.js"></script>
+                    </code>
+                    <section>
+                        <h4>解説</h4>
+                        <section>
+                            <h5>条件式の中身</h5>
+                            <span>
+                                条件式には、
+                                <table>
+                                    <tr><td>a == b</td><td>aとbが同じ</td></tr>
+                                    <tr><td>a != b</td><td>aとbが異なる</td></tr>
+                                    <tr><td>a &lt; b</td><td>aがb未満</td></tr>
+                                    <tr><td>a &gt; b</td><td>bがa未満</td></tr>
+                                    <tr><td>a &lt;= b</td><td>bがa以上</td></tr>
+                                    <tr><td>a &gt;= b</td><td>aがb以上</td></tr>
+                                    <tr><td>a &amp;&amp; b</td><td>a且つb</td></tr>
+                                    <tr><td>a || b</td><td>aまたはb</td></tr>
+                                </table>
+                                といったものがあります。
+                            </span>
+                        </section>
+                        <section>
+                            <h5>if文</h5>
+                            <p>if文は、{}の中にある処理を条件式がtrueの場合実行します。</p>
+<pre><code>
+if(条件式) {
+    処理
+}
+</code></pre>
+                        </section>
+                        <section>
+                            <h5>else if文</h5>
+                            <p>else if文は、{}の中にある処理をそれより上にあるif文・else if文の条件式を満たさず、且つ条件式がtrueの場合実行します。必ずif文と組み合わせて使います。</p>
+<pre><code>
+if(条件式) {
+    処理
+}
+else if(条件式) {
+    処理
+}
+</code></pre>
+                        </section>
+                        <section>
+                            <h5>else文</h5>
+                            <p>else文は、{}の中にある処理をそれより上にあるif文・else if文の条件式をいずれも満たさなかった場合実行します。必ずif文と組み合わせて使います。</p>
+<pre><code>
+if(条件式) {
+    処理
+}
+else {
+    処理
+}
+</code></pre>
+                        </section>
+                        <section>
+                            <h5>switch-case文</h5>
+                            <p>switch-case文はswitch文の変数と、case文の後にある値が同じであればcase節を実行します。default文はcase文の条件に1つも当てはまらないときにdefault節を実行します。</p>
+<pre><code>
+switch(変数) {
+    case 値:
+        処理
+        break;
+    default:
+        処理
+        break;
+}
+</code></pre>
+                        </section>
+                        <section>
+                            <h5>break文</h5>
+                            <p>while文やfor文、switch文などの中でこの文が実行されると{}を1つ抜けます。これより下の{}の文は無視されます。</p>
+                        </section>
+                    </section>
+                </section>
+                <section>
+                    <h3>サンプル２</h3>
+                    <code>
+                        <script src="https://gist.github.com/HinoAyase/4e1fd2627f0239d29659fa18footer-contents24ed86.js"></script>
+                    </code>
+                    <section>
+                        <h4>解説</h4>
+                        <section>
+                            <h5>条件式がbool型の場合</h5>
+                            <span>もし<pre><code>a == true</code></pre>という条件式を書きたい場合trueの場合、<pre><code> == true</code></pre>を省略することができます。</span>
+                        </section>
+                    </section>
+                </section>
+                <section>
+                    <h3>課題</h3>
+                    <ul>
+                        <li>サンプルコードを実行して出力を確かめる。</li>
+                        <li><strong>要提出</strong> 簡単な電卓を作りましょう。2つの整数のみで構わないので標準入力より読み取って四則演算ができるようにしましょう。少数で表示してもいいですし、商と余りを出力しても大丈夫です。</li>
+                    </ul>
+                </section>
             </main>
             <footer>
                 <div class="footer-contents">

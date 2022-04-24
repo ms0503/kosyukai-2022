@@ -11,10 +11,10 @@
         <meta http-equiv="content-security-policy" content="default-src 'self'; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://gist.github.com; style-src 'self' 'unsafe-inline' https://cdn.skypack.dev https://fonts.googleapis.com https://unpkg.com" />
         <meta http-equiv="strict-transport-security" content="max-age=31536000" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>TOP - C++講習会2022</title>
-        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="TOP" />
+        <title>Ex. 多次元配列 - C++講習会2022</title>
+        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/ex-mda.html" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Ex, 多次元配列" />
         <meta property="og:site_name" content="C++講習会2022" />
         <meta property="og:locale" content="ja_JP" />
         <link rel="stylesheet" href="style.min.css?f0218ce1530afe1f7ea82162aa5c79c4" />
@@ -92,36 +92,27 @@
         </nav>
         <div class="container">
             <h1>C++講習会2022</h1>
-            <h2>プログラムの基礎を学ぼう！</h2>
-            <h3>ソフトウェア研究部会へようこそ！</h3>
-            <p>
-                この講習会は、プログラミングの基礎を学ぶために作られたものです。<br />
-                最初は理解するのに時間がかかるかもしれませんが&quot;やればやるだけ&quot;<br />
-                身に付くので根気詰めすぎないよう頑張ってください。
-            </p>
+            <h2>多次元配列</h2>
             <main>
-                <h4>０．コンパイル</h3>
-                <p>コンパイルしてみよう。</p>
-                <h4>１．出力</h3>
-                <p>std::coutを理解して標準出力に出力してみよう。</p>
-                <h4>２．表示</h3>
-                <p>変数と型、constを理解し、変数に格納してからコンソール画面に出力できるようになろう。</p>
-                <h4>３．演算子</h4>
-                <p>演算子を理解し、四則演算ができるようになろう。</p>
-                <h4>４．入力</h4>
-                <p>std::cinを理解し、標準入力から値を受け取ってみよう。</p>
-                <h4>５．分岐</h4>
-                <p>条件分岐を理解し、if・switchが使えるようになろう。</p>
-                <h4>６．繰り返し</h4>
-                <p>繰り返しを理解し、for・whileが使えるようになろう。</p>
-                <h4>７．配列</h4>
-                <p>配列を理解し、std::array・for・eachを使えるようになろう。</p>
-                <h4>８．関数</h4>
-                <p>関数を理解し使えるようになろう。</p>
-                <h4>９．クラス</h4>
-                <p>classを理解し使えるようになろう。</p>
-                <h4>１０．最終試験</h4>
-                <p>三目並べを制作し、講習会を卒業しよう。</p>
+                <section>
+                    <h3>多次元配列</h3>
+                    <picture>
+                        <source srcset="image/double_array.webp?281ab43c8cf2888be93f7c886c4b9b72" type="image/webp" />
+                        <img src="image/double_array.png?bce69bd8aa5c8993902d7e15cb6e052d" width="574" alt="" />
+                    </picture>
+                    <p>上の図は3x3の2次元配列です。</p>
+                </section>
+                <section>
+                    <h3>サンプル</h3>
+                    <code>
+                        <script src="https://gist.github.com/HinoAyase/2966f411e1357519d7c4d8a2400a82e4.js"></script>
+                    </code>
+                    <section>
+                        <h4>解説</h4>
+                        <p>arr1は宣言のみ、arr2は0で初期化。arr3は1から9までで初期化してます。</p>
+                        <p>サンプルコードを出力するとarr3の中身が分かります。</p>
+                    </section>
+                </section>
             </main>
             <footer>
                 <div class="footer-contents">

@@ -11,10 +11,10 @@
         <meta http-equiv="content-security-policy" content="default-src 'self'; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://gist.github.com; style-src 'self' 'unsafe-inline' https://cdn.skypack.dev https://fonts.googleapis.com https://unpkg.com" />
         <meta http-equiv="strict-transport-security" content="max-age=31536000" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>TOP - C++講習会2022</title>
-        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="TOP" />
+        <title>7. 配列 - C++講習会2022</title>
+        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/7.html" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="7. 配列" />
         <meta property="og:site_name" content="C++講習会2022" />
         <meta property="og:locale" content="ja_JP" />
         <link rel="stylesheet" href="style.min.css?f0218ce1530afe1f7ea82162aa5c79c4" />
@@ -92,36 +92,88 @@
         </nav>
         <div class="container">
             <h1>C++講習会2022</h1>
-            <h2>プログラムの基礎を学ぼう！</h2>
-            <h3>ソフトウェア研究部会へようこそ！</h3>
-            <p>
-                この講習会は、プログラミングの基礎を学ぶために作られたものです。<br />
-                最初は理解するのに時間がかかるかもしれませんが&quot;やればやるだけ&quot;<br />
-                身に付くので根気詰めすぎないよう頑張ってください。
-            </p>
+            <h2>配列</h2>
             <main>
-                <h4>０．コンパイル</h3>
-                <p>コンパイルしてみよう。</p>
-                <h4>１．出力</h3>
-                <p>std::coutを理解して標準出力に出力してみよう。</p>
-                <h4>２．表示</h3>
-                <p>変数と型、constを理解し、変数に格納してからコンソール画面に出力できるようになろう。</p>
-                <h4>３．演算子</h4>
-                <p>演算子を理解し、四則演算ができるようになろう。</p>
-                <h4>４．入力</h4>
-                <p>std::cinを理解し、標準入力から値を受け取ってみよう。</p>
-                <h4>５．分岐</h4>
-                <p>条件分岐を理解し、if・switchが使えるようになろう。</p>
-                <h4>６．繰り返し</h4>
-                <p>繰り返しを理解し、for・whileが使えるようになろう。</p>
-                <h4>７．配列</h4>
-                <p>配列を理解し、std::array・for・eachを使えるようになろう。</p>
-                <h4>８．関数</h4>
-                <p>関数を理解し使えるようになろう。</p>
-                <h4>９．クラス</h4>
-                <p>classを理解し使えるようになろう。</p>
-                <h4>１０．最終試験</h4>
-                <p>三目並べを制作し、講習会を卒業しよう。</p>
+                <section>
+                    <h3>目標</h3>
+                    <p>配列を用いて一度に複数の変数を確保することができる。</p>
+                </section>
+                <section>
+                    <h3>語句説明</h3>
+                    <section>
+                        <h4>配列</h4>
+                        <p>棚のようなもの。棚の中1つ1つに変数が入っている。イメージ画像は4段ある棚。</p>
+                    </section>
+                    <section>
+                        <h4>要素</h4>
+                        <p>棚の中の変数1つ1つ。イメージ画像の中の引き出し1段1段。</p>
+                        <p>&lt;イメージ&gt;</p>
+                        <picture>
+                            <source srcset="image/array_base.webp?379df9118bbff691b257678696e80e34" type="image/webp" />
+                            <img src="image/array_base.png?74e9cf1c730c74d1e6dce0a0fa14d357" width="574" alt="" />
+                        </picture>
+                    </section>
+                </section>
+                <section>
+                    <h3>サンプル</h3>
+                    <code>
+                        <script src="https://gist.github.com/HinoAyase/04fafedc77d5418449182ffooter-contents9348fbed.js"></script>
+                    </code>
+                    <section>
+                        <h4>解説</h4>
+                        <section>
+                            <h5>#include&lt;array&gt;</h5>
+                            <span><pre><code>std::array</code></pre>を使えるようにするための文。</span>
+                        </section>
+                        <section>
+                            <h5>配列の宣言、要素</h5>
+                            <span>
+                                配列を使うと一度に複数の変数を確保できます。
+                                宣言は<pre><code>std::array &lt;型, 要素数&gt; 配列名;</code></pre>の形で行います。
+                            </span>
+                            <span>
+                                要素は<strong>0から順番に数えられ、要素数-1個までの番号</strong>があります。配列は要素の中に変数が入っていて、各要素ごとに中身を変えられます。
+                                各要素には<pre><code>配列[番号]</code></pre>でアクセスできます。
+                            </span>
+                        </section>
+                        <section>
+                            <h5>配列の初期化</h5>
+                            <p>
+                                a・b・cでは3通りの初期化方法を紹介しています。
+                                aは宣言と同時に代入していて、{}内で0から順番にコンマ区切りで値を代入できます。
+                            </p>
+                            <span>
+                                例：
+                                <pre><code>std::array &lt;int, 3&gt; n = { 3, 8 }</code></pre>
+                                この方法だと、<pre><code>n[0] == 3</code></pre>、<pre><code>n[1] == 8</code></pre>となります。
+                                また、<pre><code>n[2]</code></pre>にはこの方法のときは自動的に0が入るのでエラーが出にくくなります。
+                            </span>
+                            <p>
+                                bはfor文を回して、iを使ってすべての要素にアクセスしています。
+                                cは後述する範囲for文を使ってすべての要素にアクセスしています。
+                            </p>
+                        </section>
+                        <section>
+                            <h5>範囲for文(foreach文)</h5>
+                            <p>使い方</p>
+                            <pre><code>for(配列と同じ型 &ループ内で使う変数名 : 配列名) {}</code></pre>
+                            <p>
+                                ループ内で使う変数名というのは、配列の中身を一旦その変数に移して実行するためです。配列の中身を書き換える場合はその変数の前に&amp;を付けましょう。
+                            </p>
+                            <p>
+                                範囲for文は配列の数だけループさせる文です。for文と違い、配列の要素数が変わってもコードを書き換える必要がない便利な文です。
+                                また、同様の文の他のプログラミング言語での名称からforeach文、拡張for文と呼ばれることもあります。
+                            </p>
+                        </section>
+                    </section>
+                </section>
+                <section>
+                    <h3>課題</h3>
+                    <ul>
+                        <li>サンプルコードを実行して出力を確かめる。</li>
+                        <li><strong>要提出</strong> <a href="https://gist.github.com/HinoAyase/d57e18ede1cb89d4ab51b10dc458c6cf">1から100までのフィボナッチ数列を出力するプログラムを作る。(クリックで説明を表示)</a></li>
+                    </ul>
+                </section>
             </main>
             <footer>
                 <div class="footer-contents">

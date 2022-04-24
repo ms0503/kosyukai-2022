@@ -11,10 +11,10 @@
         <meta http-equiv="content-security-policy" content="default-src 'self'; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://gist.github.com; style-src 'self' 'unsafe-inline' https://cdn.skypack.dev https://fonts.googleapis.com https://unpkg.com" />
         <meta http-equiv="strict-transport-security" content="max-age=31536000" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>TOP - C++講習会2022</title>
-        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="TOP" />
+        <title>Ex. 名前空間 - C++講習会2022</title>
+        <meta property="og:url" content="https://hinoayase.github.io/kosyukai2021/ex-ns.html" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Ex. 名前空間" />
         <meta property="og:site_name" content="C++講習会2022" />
         <meta property="og:locale" content="ja_JP" />
         <link rel="stylesheet" href="style.min.css?f0218ce1530afe1f7ea82162aa5c79c4" />
@@ -92,36 +92,45 @@
         </nav>
         <div class="container">
             <h1>C++講習会2022</h1>
-            <h2>プログラムの基礎を学ぼう！</h2>
-            <h3>ソフトウェア研究部会へようこそ！</h3>
-            <p>
-                この講習会は、プログラミングの基礎を学ぶために作られたものです。<br />
-                最初は理解するのに時間がかかるかもしれませんが&quot;やればやるだけ&quot;<br />
-                身に付くので根気詰めすぎないよう頑張ってください。
-            </p>
+            <h2>名前空間</h2>
             <main>
-                <h4>０．コンパイル</h3>
-                <p>コンパイルしてみよう。</p>
-                <h4>１．出力</h3>
-                <p>std::coutを理解して標準出力に出力してみよう。</p>
-                <h4>２．表示</h3>
-                <p>変数と型、constを理解し、変数に格納してからコンソール画面に出力できるようになろう。</p>
-                <h4>３．演算子</h4>
-                <p>演算子を理解し、四則演算ができるようになろう。</p>
-                <h4>４．入力</h4>
-                <p>std::cinを理解し、標準入力から値を受け取ってみよう。</p>
-                <h4>５．分岐</h4>
-                <p>条件分岐を理解し、if・switchが使えるようになろう。</p>
-                <h4>６．繰り返し</h4>
-                <p>繰り返しを理解し、for・whileが使えるようになろう。</p>
-                <h4>７．配列</h4>
-                <p>配列を理解し、std::array・for・eachを使えるようになろう。</p>
-                <h4>８．関数</h4>
-                <p>関数を理解し使えるようになろう。</p>
-                <h4>９．クラス</h4>
-                <p>classを理解し使えるようになろう。</p>
-                <h4>１０．最終試験</h4>
-                <p>三目並べを制作し、講習会を卒業しよう。</p>
+                <section>
+                    <h3>名前空間(namespace)とは</h3>
+                    <p>イメージ</p>
+                    <picture>
+                        <source srcset="image/std.webp?bfa3e4b9a9ea3e08e7d3dac2d45fdecb" type="image/webp" />
+                        <img src="image/std.png?33e8b3b8acc66d26b60ed25a68f3da09" width="574" alt="" />
+                    </picture>
+                    <span>
+                        皆さんが何気なく使っている&quot;std&quot;は名前空間の名称です。一般的にC++に標準搭載されているライブラリの構文は&quot;std&quot;の中に入っています。
+                        名前空間の中に入っている構文は通常、構文の前に&quot;名前::&quot;を付けないといけません。(e.g. <pre><code>std::cout</code></pre>)
+                    </span>
+                </section>
+                <section>
+                    <h3>名前空間の作り方</h3>
+                    <code>
+                        <script src="https://gist.github.com/HinoAyase/c0a199c1ce960a86cb03835b3891661d.js"></script>
+                    </code>
+<pre><code>
+namespace 名称 {
+    中に入れるものを書く。
+}
+</code></pre>
+                    <p>名前空間を使うことによって、その構文がどのような役割を持っているかまとめて区別することができます。</p>
+                    <p>ちなみに名前空間を名前空間で囲うこともできます。</p>
+                </section>
+                <section>
+                    <h3>using namespace std;</h3>
+                    <p>
+                        分からないときに検索するとよくこの構文が出てきます。この構文の役割は&quot;std&quot;という名前空間を区別しなくてよくなることです。
+                        例えば、&quot;std::cout&quot;を&quot;cout&quot;だけで使えるようになります。
+                    </p>
+                    <p>
+                        これを使う利点としてはコードを書く量が短くなるため、競技プログラミングなどでよく使用されます。
+                        しかし、複数のライブラリを使う規模の大きい開発の場合には、多用しすぎることでコードが見づらくなってしまったり、
+                        別の名前空間内にある同じ構文にてどのように動くか分からなくなってしまうことがあるので、なるべく使わないように心がけましょう。
+                    </p>
+                </section>
             </main>
             <footer>
                 <div class="footer-contents">
