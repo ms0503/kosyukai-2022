@@ -23,6 +23,9 @@ p {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
+a {
+    text-decoration: none;
+}
 pre {
     display: inline;
 }
@@ -84,7 +87,6 @@ code {
     display: block;
     color: #0ff;
     line-height: 100%;
-    text-decoration: none;
 }
 .navigation-button {
     display: block;
