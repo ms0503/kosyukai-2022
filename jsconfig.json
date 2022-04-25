@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "jsx": "preserve",
+        "module": "esnext",
+        "strictFunctionTypes": true,
+        "target": "esnext"
+    },
+    "exclude": [
+        "**/node_modules/*",
+        "node_modules"
+    ],
+    "include": [
+        "components/**/*.js",
+        "components/**/*.jsx",
+        "pages/**/*.js",
+        "pages/**/*.jsx"
+    ]
+}
