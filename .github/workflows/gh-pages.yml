@@ -1,11 +1,16 @@
 name: github pages
 
 on:
+  pull_request:
+    branches:
+      - main
+      - nextjs
   push:
     branches:
-    - main
+      - main
+      - nextjs
   schedule:
-  - cron: '0 0 * * *'
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:

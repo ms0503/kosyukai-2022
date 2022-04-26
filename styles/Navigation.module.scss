@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+#slidemenu {
+    display: none;
+}
+.navigation {
+    background: #cc6;
+    position: fixed;
+    top: 62px;
+    right: 0;
+    z-index: 20;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+}
+.navigation-button {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    width: 62px;
+    height: 62px;
+    background-image: url(../public/image/navbtn.webp), url(../public/image/navbtn.png);
+    background-size: 62px;
+}
+.navigation-button:active, .navigation-button:hover {
+    background-color: #0083ff;
+}
+@media screen and (min-width: 600px) {
+    #slidemenu {
+        display: block;
+    }
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: none;
+        border: 3px solid #630;
+        box-shadow: none;
+    }
+    .navigation h2 {
+        padding: 0 0.5rem;
+    }
+    .navigation-button {
+        display: none;
+    }
+}
