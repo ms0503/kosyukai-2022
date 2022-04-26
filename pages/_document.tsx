@@ -67,7 +67,7 @@ export default class MyDocument extends Document {
                     <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="icon/apple-touch-icon-152x152.png" />
                     <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon-180x180.png" />
                     <link rel="manifest" type="application/json" href="manifest.json" />
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?f=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
                 </Head>
                 <body>
                     <Main />
