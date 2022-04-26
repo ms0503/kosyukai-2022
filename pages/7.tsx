@@ -36,7 +36,7 @@ export default function Seven(): JSX.Element {
                             <p>&lt;イメージ&gt;</p>
                             <picture>
                                 <source srcSet="image/array_base.webp" type="image/webp" />
-                                <img src="image/array_base.png" width="574" alt="" />
+                                <img src="image/array_base.png" width={574} alt="" />
                             </picture>
                         </section>
                     </section>

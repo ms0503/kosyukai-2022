@@ -25,7 +25,7 @@ export default function ExNameSpace(): JSX.Element {
                         <p>イメージ</p>
                         <picture>
                             <source srcSet="image/std.webp" type="image/webp" />
-                            <img src="image/std.png" width="574" alt="" />
+                            <img src="image/std.png" width={574} alt="" />
                         </picture>
                         <span>
                             皆さんが何気なく使っている&quot;std&quot;は名前空間の名称です。一般的にC++に標準搭載されているライブラリの構文は&quot;std&quot;の中に入っています。

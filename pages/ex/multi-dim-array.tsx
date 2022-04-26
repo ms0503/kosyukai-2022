@@ -24,7 +24,7 @@ export default function ExMultiDimArray(): JSX.Element {
                         <h3>多次元配列</h3>
                         <picture>
                             <source srcSet="image/double_array.webp" type="image/webp" />
-                            <img src="image/double_array.png" width="574" alt="" />
+                            <img src="image/double_array.png" width={574} alt="" />
                         </picture>
                         <p>上の図は3x3の2次元配列です。</p>
                     </section>

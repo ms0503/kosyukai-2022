@@ -10,7 +10,7 @@ export default function Navigation(): JSX.Element {
             <div className={styles['navigation-button']}></div>
             <div className={styles['navigation']}>
                 <h2>講習一覧</h2>
-                <Menu>
+                <Menu width={300}>
                     <ul className={styles['navigation-list']}>
                         <li><Link href="index/"><a style={{color: '#ff0'}}>TOP</a></Link></li>
                         <li><Link href="-1/"><a>－１．プロジェクト作成</a></Link></li>
