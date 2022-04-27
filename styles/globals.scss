@@ -1,13 +1,18 @@
 @charset "UTF-8";
 
-html {
+* {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
 body {
     background: #996;
-    font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100vh;
 }
 p {
     overflow-wrap: break-word;
