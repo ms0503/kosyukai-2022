@@ -22,7 +22,7 @@ a {
     &:active, &:hover {
         color: #3cc;
         text-decoration: underline;
-        transition: color linear .3s, text-decoration linear .3s;
+        transition: color 0.3s linear, text-decoration 0.3s linear 0.5s;
     }
 }
 img {
