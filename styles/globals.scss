@@ -12,7 +12,6 @@ html, body {
 }
 body {
     background: #996;
-    min-height: 100vh;
 }
 p {
     overflow-wrap: break-word;
@@ -44,6 +43,7 @@ code {
 .container {
     display: block;
     margin: 0;
+    min-height: 100vh;
 }
 .contents {
     margin: 0 2rem;
