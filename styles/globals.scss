@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background: #996;
+    font-family: 'Noto Sans JP', sans-serif;
+}
 p {
     overflow-wrap: break-word;
     -ms-word-break: break-all;
@@ -35,6 +44,13 @@ code {
     margin: 0 2rem;
 }
 @media screen and (min-width: 600px) {
+    body {
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
     .container {
         display: flex;
         -ms-flex-direction: row;
