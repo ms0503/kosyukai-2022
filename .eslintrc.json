@@ -29,8 +29,7 @@
         "plugin:react-hooks/recommended",
         "prettier",
         "standard",
-        "standard-jsx",
-        "standard-react"
+        "standard-jsx"
     ],
     "globals": {},
     "ignorePatterns": [

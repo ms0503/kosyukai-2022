@@ -49,7 +49,6 @@
         "eslint-config-prettier": "^8.5.0",
         "eslint-config-standard": "^17.0.0",
         "eslint-config-standard-jsx": "^11.0.0",
-        "eslint-config-standard-react": "^11.0.1",
         "eslint-config-strict-mode": "^1.0.53",
         "eslint-import-resolver-typescript": "^2.7.1",
         "eslint-plugin-etc": "^2.0.2",
