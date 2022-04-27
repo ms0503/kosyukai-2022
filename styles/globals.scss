@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 html, body {
@@ -15,18 +13,13 @@ body {
 }
 p {
     overflow-wrap: break-word;
-    -ms-word-break: break-all;
     word-break: break-all;
-    -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
 a {
     text-decoration: none;
     &:active, &:hover {
         text-decoration: underline;
-        -o-transition: text-decoration linear .3s;
-        -moz-transition: text-decoration linear .3s;
-        -webkit-transition: text-decoration linear .3s;
         transition: text-decoration linear .3s;
     }
 }
@@ -51,22 +44,16 @@ code {
 @media screen and (min-width: 600px) {
     body {
         display: flex;
-        -ms-flex-direction: column;
         flex-direction: column;
-        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     }
     .container {
         display: flex;
-        -ms-flex-direction: row;
         flex-direction: row;
-        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     }
     .contents {
-        -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     }
 }
