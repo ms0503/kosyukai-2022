@@ -11,11 +11,7 @@ export default function MinusOne(): JSX.Element {
                 <title>-1. プロジェクト作成 - C++講習会2022</title>
             </Head>
             <div className="container">
-                <nav className="nav">
-                    <div className="nav-container">
-                        <Navigation />
-                    </div>
-                </nav>
+                <Navigation />
                 <main className="contents">
                     <h1>C++講習会2022</h1>
                     <h2>プロジェクト作成</h2>
@@ -68,11 +64,7 @@ export default function MinusOne(): JSX.Element {
                     </section>
                 </main>
             </div>
-            <footer className="footer">
-                <div className="footer-contents">
-                    <Footer />
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

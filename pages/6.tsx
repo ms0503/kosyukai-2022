@@ -12,11 +12,7 @@ export default function Six(): JSX.Element {
                 <title>6. 繰り返し - C++講習会2022</title>
             </Head>
             <div className="container">
-                <nav className="nav">
-                    <div className="nav-container">
-                        <Navigation />
-                    </div>
-                </nav>
+                <Navigation />
                 <main className="contents">
                     <h1>C++講習会2022</h1>
                     <h2>繰り返し</h2>
@@ -119,11 +115,7 @@ while(input != 0) &lbrace; // inputが0以外のときtrue。
                     </section>
                 </main>
             </div>
-            <footer className="footer">
-                <div className="footer-contents">
-                    <Footer />
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

@@ -12,11 +12,7 @@ export default function Eight(): JSX.Element {
                 <title>8. 関数 - C++講習会2022</title>
             </Head>
             <div className="container">
-                <nav className="nav">
-                    <div className="nav-container">
-                        <Navigation />
-                    </div>
-                </nav>
+                <Navigation />
                 <main className="contents">
                     <h1>C++講習会2022</h1>
                     <h2>関数</h2>
@@ -84,11 +80,7 @@ export default function Eight(): JSX.Element {
                     </section>
                 </main>
             </div>
-            <footer className="footer">
-                <div className="footer-contents">
-                    <Footer />
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

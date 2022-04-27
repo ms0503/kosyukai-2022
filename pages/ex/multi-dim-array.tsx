@@ -12,11 +12,7 @@ export default function ExMultiDimArray(): JSX.Element {
                 <title>Ex. 多次元配列 - C++講習会2022</title>
             </Head>
             <div className="container">
-                <nav className="nav">
-                    <div className="nav-container">
-                        <Navigation />
-                    </div>
-                </nav>
+                <Navigation />
                 <main className="contents">
                     <h1>C++講習会2022</h1>
                     <h2>多次元配列</h2>
@@ -39,11 +35,7 @@ export default function ExMultiDimArray(): JSX.Element {
                     </section>
                 </main>
             </div>
-            <footer className="footer">
-                <div className="footer-contents">
-                    <Footer />
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

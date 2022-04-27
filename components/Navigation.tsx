@@ -1,16 +1,24 @@
 'use strict';
 
+import $ from 'jquery';
 import Link from 'next/link';
 import styles from '../styles/Navigation.module.scss';
-import { slide as Menu } from 'react-burger-menu';
 
 export default function Navigation(): JSX.Element {
     return (
-        <>
-            <div className={styles['navigation-button']}></div>
-            <div className={styles['navigation']}>
-                <h2>講習一覧</h2>
-                <Menu width={300}>
+        <nav className={styles['nav']}>
+            <div className={styles['nav-container']}>
+                <div className={styles['navigation-button']} onClick={e => {
+                    e.preventDefault();
+                    let shade = $('.navigation-effect')[0];
+                    if(shade === undefined) {
+                        $('<div>').addClass('navigation-effect').on('click', e => removeMenu(e.delegateTarget)).appendTo($('body'));
+                        $('#slidemenu').slideDown('fast');
+                    } else removeMenu(shade);
+                    return true;
+                }}></div>
+                <div id="slidemenu" className={styles['navigation']}>
+                    <h2>講習一覧</h2>
                     <ul className={styles['navigation-list']}>
                         <li><Link href="index/"><a style={{color: '#ff0'}}>TOP</a></Link></li>
                         <li><Link href="-1/"><a>－１．プロジェクト作成</a></Link></li>
@@ -28,8 +36,13 @@ export default function Navigation(): JSX.Element {
                         <li><Link href="ex/multi-dim-array/"><a>Ｅｘ．多次元配列</a></Link></li>
                         <li><Link href="ex/namespace/"><a>Ｅｘ．名前空間</a></Link></li>
                     </ul>
-                </Menu>
+                </div>
             </div>
-        </>
+        </nav>
     );
+}
+
+function removeMenu(shade: HTMLElement) {
+    shade.remove();
+    $('#slidemenu').slideUp('fast');
 }

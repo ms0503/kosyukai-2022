@@ -12,11 +12,7 @@ export default function Five(): JSX.Element {
                 <title>5. 分岐 - C++講習会2022</title>
             </Head>
             <div className="container">
-                <nav className="nav">
-                    <div className="nav-container">
-                        <Navigation />
-                    </div>
-                </nav>
+                <Navigation />
                 <main className="contents">
                     <h1>C++講習会2022</h1>
                     <h2>分岐</h2>
@@ -130,11 +126,7 @@ switch(変数) &lbrace;
                     </section>
                 </main>
             </div>
-            <footer className="footer">
-                <div className="footer-contents">
-                    <Footer />
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

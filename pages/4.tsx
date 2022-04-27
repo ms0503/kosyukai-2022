@@ -12,11 +12,7 @@ export default function Four(): JSX.Element {
                 <title>4. 入力 - C++講習会2022</title>
             </Head>
             <div className="container">
-                <nav className="nav">
-                    <div className="nav-container">
-                        <Navigation />
-                    </div>
-                </nav>
+                <Navigation />
                 <main className="contents">
                     <h1>C++講習会2022</h1>
                     <h2>入力</h2>
@@ -57,11 +53,7 @@ std::cin &gt;&gt; a &gt;&gt; b;
                     </section>
                 </main>
             </div>
-            <footer className="footer">
-                <div className="footer-contents">
-                    <Footer />
-                </div>
-            </footer>
+            <Footer />
         </>
     );
 }

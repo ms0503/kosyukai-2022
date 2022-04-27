@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-html {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-body {
-    background: #996;
-    font-family: 'Noto Sans JP', sans-serif;
-}
 p {
     overflow-wrap: break-word;
     -ms-word-break: break-all;
@@ -18,13 +9,13 @@ p {
 }
 a {
     text-decoration: none;
-}
-a:active, a:hover {
-    text-decoration: underline;
-    -o-transition: text-decoration linear .3s;
-    -moz-transition: text-decoration linear .3s;
-    -webkit-transition: text-decoration linear .3s;
-    transition: text-decoration linear .3s;
+    &:active, &:hover {
+        text-decoration: underline;
+        -o-transition: text-decoration linear .3s;
+        -moz-transition: text-decoration linear .3s;
+        -webkit-transition: text-decoration linear .3s;
+        transition: text-decoration linear .3s;
+    }
 }
 img {
     object-fit: contain;
@@ -40,30 +31,10 @@ code {
     display: block;
     margin: 0;
 }
-.nav-container {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 20;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-}
 .contents {
     margin: 0 2rem;
 }
-.footer-contents {
-    background: #cc3;
-}
 @media screen and (min-width: 600px) {
-    body {
-        display: flex;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    }
     .container {
         display: flex;
         -ms-flex-direction: row;
@@ -73,23 +44,7 @@ code {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     }
-    .nav {
-        -ms-flex: 0 1 auto;
-        flex: 0 1 auto;
-    }
-    .nav-container {
-        position: relative;
-        top: 0;
-        left: 0;
-        padding: 20px;
-        -ms-flex: 0 0 auto;
-        flex: 0 0 auto;
-    }
     .contents {
-        -ms-flex: 1 1 auto;
-        flex: 1 1 auto;
-    }
-    .footer {
         -ms-flex: 1 1 auto;
         flex: 1 1 auto;
     }
