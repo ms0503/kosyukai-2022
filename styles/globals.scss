@@ -17,11 +17,12 @@ p {
     word-wrap: break-word;
 }
 a {
-    color: #0FF;
+    color: #0ff;
     text-decoration: none;
     &:active, &:hover {
+        color: #3cc;
         text-decoration: underline;
-        transition: text-decoration linear .3s;
+        transition: color linear .3s, text-decoration linear .3s;
     }
 }
 img {
