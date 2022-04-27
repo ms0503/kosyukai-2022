@@ -91,6 +91,8 @@
     }
     .navigation-list {
         display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
     .navigation-list li {
         flex: 0 0 auto;
