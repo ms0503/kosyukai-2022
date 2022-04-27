@@ -17,6 +17,7 @@ p {
     word-wrap: break-word;
 }
 a {
+    color: #0FF;
     text-decoration: none;
     &:active, &:hover {
         text-decoration: underline;
