@@ -2,15 +2,16 @@
 
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
 
-export default class MyDocument extends Document {
+export default class MyDocument extends Document<{ prefix: string | undefined }> {
     static async getInitialProps(ctx: DocumentContext) {
         const initialProps = await Document.getInitialProps(ctx);
-        return { ...initialProps };
+        const prefix = ctx.pathname.startsWith('/404') ? undefined : 'og: http://ogp.me/ns#';
+        return { ...initialProps, prefix };
     }
 
     render() {
         return (
-            <Html lang="ja">
+            <Html lang="ja" prefix={this.props.prefix}>
                 <Head>
                     <meta charSet="UTF-8" />
                     <meta http-equiv="access-control-allow-origin" content="*" />
