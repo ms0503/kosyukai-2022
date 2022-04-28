@@ -21,15 +21,15 @@ export default class MyDocument extends Document {
                     <meta http-equiv="content-security-policy" content="default-src 'self'; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://gist.github.com; style-src 'self' 'unsafe-inline' https://cdn.skypack.dev https://fonts.googleapis.com https://unpkg.com" />
                     <meta http-equiv="strict-transport-security" content="max-age=31536000" />
                     <meta name="viewport" content="width=device-width,initial-scale=1" />
-                    <meta name="msapplication-square70x70logo" content="site-tile-70x70.png" />
-                    <meta name="msapplication-square150x150logo" content="site-tile-150x150.png" />
-                    <meta name="msapplication-wide310x150logo" content="site-tile-310x150.png" />
-                    <meta name="msapplication-square310x310logo" content="site-tile-310x310.png" />
+                    <meta name="msapplication-square70x70logo" content="/kosyukai-2022/site-tile-70x70.png" />
+                    <meta name="msapplication-square150x150logo" content="/kosyukai-2022/site-tile-150x150.png" />
+                    <meta name="msapplication-wide310x150logo" content="/kosyukai-2022/site-tile-310x150.png" />
+                    <meta name="msapplication-square310x310logo" content="/kosyukai-2022/site-tile-310x310.png" />
                     <meta name="msapplication-TileColor" content="#0083ff" />
                     <link rel="preconnect" href="https://fonts.googleapis.com/" />
                     <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="" />
                     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/kosyukai-2022/favicon.ico" />
-                    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+                    <link rel="icon" type="image/vnd.microsoft.icon" href="/kosyukai-2022/favicon.ico" />
                     <link rel="icon" type="image/png" sizes="36x36" href="/kosyukai-2022/icon/android-chrome-36x36.png" />
                     <link rel="icon" type="image/png" sizes="48x48" href="/kosyukai-2022/icon/android-chrome-48x48.png" />
                     <link rel="icon" type="image/png" sizes="72x72" href="/kosyukai-2022/icon/android-chrome-72x72.png" />
