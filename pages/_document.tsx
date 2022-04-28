@@ -28,45 +28,45 @@ export default class MyDocument extends Document {
                     <meta name="msapplication-TileColor" content="#0083ff" />
                     <link rel="preconnect" href="https://fonts.googleapis.com/" />
                     <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="" />
-                    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+                    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/kosyukai-2022/favicon.ico" />
                     <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
-                    <link rel="icon" type="image/png" sizes="36x36" href="icon/android-chrome-36x36.png" />
-                    <link rel="icon" type="image/png" sizes="48x48" href="icon/android-chrome-48x48.png" />
-                    <link rel="icon" type="image/png" sizes="72x72" href="icon/android-chrome-72x72.png" />
-                    <link rel="icon" type="image/png" sizes="96x96" href="icon/android-chrome-96x96.png" />
-                    <link rel="icon" type="image/png" sizes="128x128" href="icon/android-chrome-128x128.png" />
-                    <link rel="icon" type="image/png" sizes="144x144" href="icon/android-chrome-144x144.png" />
-                    <link rel="icon" type="image/png" sizes="152x152" href="icon/android-chrome-152x152.png" />
-                    <link rel="icon" type="image/png" sizes="192x192" href="icon/android-chrome-192x192.png" />
-                    <link rel="icon" type="image/png" sizes="256x256" href="icon/android-chrome-256x256.png" />
-                    <link rel="icon" type="image/png" sizes="384x384" href="icon/android-chrome-384x384.png" />
-                    <link rel="icon" type="image/png" sizes="512x512" href="icon/android-chrome-512x512.png" />
-                    <link rel="icon" type="image/png" sizes="16x16" href="icon/icon-16x16.png" />
-                    <link rel="icon" type="image/png" sizes="24x24" href="icon/icon-24x24.png" />
-                    <link rel="icon" type="image/png" sizes="32x32" href="icon/icon-32x32.png" />
-                    <link rel="icon" type="image/png" sizes="36x36" href="icon/icon-36x36.png" />
-                    <link rel="icon" type="image/png" sizes="48x48" href="icon/icon-48x48.png" />
-                    <link rel="icon" type="image/png" sizes="72x72" href="icon/icon-72x72.png" />
-                    <link rel="icon" type="image/png" sizes="96x96" href="icon/icon-96x96.png" />
-                    <link rel="icon" type="image/png" sizes="128x128" href="icon/icon-128x128.png" />
-                    <link rel="icon" type="image/png" sizes="144x144" href="icon/icon-144x144.png" />
-                    <link rel="icon" type="image/png" sizes="152x152" href="icon/icon-152x152.png" />
-                    <link rel="icon" type="image/png" sizes="160x160" href="icon/icon-160x160.png" />
-                    <link rel="icon" type="image/png" sizes="192x192" href="icon/icon-192x192.png" />
-                    <link rel="icon" type="image/png" sizes="196x196" href="icon/icon-196x196.png" />
-                    <link rel="icon" type="image/png" sizes="256x256" href="icon/icon-256x256.png" />
-                    <link rel="icon" type="image/png" sizes="384x384" href="icon/icon-384x384.png" />
-                    <link rel="icon" type="image/png" sizes="512x512" href="icon/icon-512x512.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="icon/apple-touch-icon-57x57.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="icon/apple-touch-icon-60x60.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="icon/apple-touch-icon-72x72.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="icon/apple-touch-icon-76x76.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="icon/apple-touch-icon-114x114.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="icon/apple-touch-icon-120x120.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="icon/apple-touch-icon-144x144.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="icon/apple-touch-icon-152x152.png" />
-                    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="icon/apple-touch-icon-180x180.png" />
-                    <link rel="manifest" type="application/json" href="manifest.json" />
+                    <link rel="icon" type="image/png" sizes="36x36" href="/kosyukai-2022/icon/android-chrome-36x36.png" />
+                    <link rel="icon" type="image/png" sizes="48x48" href="/kosyukai-2022/icon/android-chrome-48x48.png" />
+                    <link rel="icon" type="image/png" sizes="72x72" href="/kosyukai-2022/icon/android-chrome-72x72.png" />
+                    <link rel="icon" type="image/png" sizes="96x96" href="/kosyukai-2022/icon/android-chrome-96x96.png" />
+                    <link rel="icon" type="image/png" sizes="128x128" href="/kosyukai-2022/icon/android-chrome-128x128.png" />
+                    <link rel="icon" type="image/png" sizes="144x144" href="/kosyukai-2022/icon/android-chrome-144x144.png" />
+                    <link rel="icon" type="image/png" sizes="152x152" href="/kosyukai-2022/icon/android-chrome-152x152.png" />
+                    <link rel="icon" type="image/png" sizes="192x192" href="/kosyukai-2022/icon/android-chrome-192x192.png" />
+                    <link rel="icon" type="image/png" sizes="256x256" href="/kosyukai-2022/icon/android-chrome-256x256.png" />
+                    <link rel="icon" type="image/png" sizes="384x384" href="/kosyukai-2022/icon/android-chrome-384x384.png" />
+                    <link rel="icon" type="image/png" sizes="512x512" href="/kosyukai-2022/icon/android-chrome-512x512.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="/kosyukai-2022/icon/icon-16x16.png" />
+                    <link rel="icon" type="image/png" sizes="24x24" href="/kosyukai-2022/icon/icon-24x24.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/kosyukai-2022/icon/icon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="36x36" href="/kosyukai-2022/icon/icon-36x36.png" />
+                    <link rel="icon" type="image/png" sizes="48x48" href="/kosyukai-2022/icon/icon-48x48.png" />
+                    <link rel="icon" type="image/png" sizes="72x72" href="/kosyukai-2022/icon/icon-72x72.png" />
+                    <link rel="icon" type="image/png" sizes="96x96" href="/kosyukai-2022/icon/icon-96x96.png" />
+                    <link rel="icon" type="image/png" sizes="128x128" href="/kosyukai-2022/icon/icon-128x128.png" />
+                    <link rel="icon" type="image/png" sizes="144x144" href="/kosyukai-2022/icon/icon-144x144.png" />
+                    <link rel="icon" type="image/png" sizes="152x152" href="/kosyukai-2022/icon/icon-152x152.png" />
+                    <link rel="icon" type="image/png" sizes="160x160" href="/kosyukai-2022/icon/icon-160x160.png" />
+                    <link rel="icon" type="image/png" sizes="192x192" href="/kosyukai-2022/icon/icon-192x192.png" />
+                    <link rel="icon" type="image/png" sizes="196x196" href="/kosyukai-2022/icon/icon-196x196.png" />
+                    <link rel="icon" type="image/png" sizes="256x256" href="/kosyukai-2022/icon/icon-256x256.png" />
+                    <link rel="icon" type="image/png" sizes="384x384" href="/kosyukai-2022/icon/icon-384x384.png" />
+                    <link rel="icon" type="image/png" sizes="512x512" href="/kosyukai-2022/icon/icon-512x512.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/kosyukai-2022/icon/apple-touch-icon-57x57.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="/kosyukai-2022/icon/apple-touch-icon-60x60.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/kosyukai-2022/icon/apple-touch-icon-72x72.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/kosyukai-2022/icon/apple-touch-icon-76x76.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/kosyukai-2022/icon/apple-touch-icon-114x114.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/kosyukai-2022/icon/apple-touch-icon-120x120.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/kosyukai-2022/icon/apple-touch-icon-144x144.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/kosyukai-2022/icon/apple-touch-icon-152x152.png" />
+                    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/kosyukai-2022/icon/apple-touch-icon-180x180.png" />
+                    <link rel="manifest" type="application/json" href="/kosyukai-2022/manifest.json" />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?f=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" />
                 </Head>
                 <body>

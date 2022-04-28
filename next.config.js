@@ -12,7 +12,6 @@ const optimizedImagesConfig = {
 };
 
 module.exports = {
-    assetPrefix: '/kosyukai-2022',
     eslint: {
         dirs: [
             'components',
