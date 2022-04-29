@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.footer-contents {
+    background: #cc3;
+}
+@media screen and (min-width: 600px) {
+    .footer {
+        flex: 1 1 auto;
+    }
+}

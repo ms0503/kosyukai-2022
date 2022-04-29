@@ -1,0 +1,39 @@
+name: github pages
+
+on:
+  pull_request:
+    branches:
+      - main
+      - nextjs
+  push:
+    branches:
+      - main
+      - nextjs
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
+          node-version: '18.x'
+      - name: install
+        run: npm i --frozen-lockfile
+      - name: build
+        run: npm run build
+      - name: export
+        run: npm run export
+      - name: add nojekyll
+        run: touch ./out/.nojekyll
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
